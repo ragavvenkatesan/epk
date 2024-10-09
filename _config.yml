@@ -1,0 +1,11 @@
+# Site settings
+title: Sludge Factory
+email: booking@sludgefactory.band
+description: "Welcome to the webpage of Sludge Factory."
+baseurl: "https://sludgefactory.band"
+url: "https://sludgefactory.band"
+
+instagram_username: sludgefactory
+
+# Build settings
+markdown: kramdown

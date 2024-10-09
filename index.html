@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+
+    <!-- .......... Title .......... -->
+    <title>Sludge Factory</title>
+    <!-- .......... End Title .......... -->
+
+    <!-- .......... Fonts and Extras .......... -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOverpass+Mono:700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- .......... End Fonts and Extras .......... -->
+
+    <!-- .......... Styles .......... -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- .......... End Styles .......... -->
+
+    <!-- .......... Favicons .......... -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <!-- .......... End Favicons .......... -->
+
+</head>
+
+<body class="loading">
+
+    <!-- .......... Preloader .......... -->
+    <div class="js-preloader preloader"></div>
+    <!-- .......... End Preloader .......... -->
+
+    <!-- .......... Fixed Top Panel Start .......... -->
+    <header class="panel js-panel">
+        <div class="container--panel uk-container uk-height-1-1">
+            <div class="uk-flex uk-flex-middle uk-height-1-1" data-uk-grid>
+                <div class="uk-width-1-3 uk-width-1-6@m">
+                    <div class="logo logo--panel uk-visible@m">
+                        <a href="#intro" data-uk-scroll>
+                            <!-- .......... Logo .......... -->
+                            <img src="img/logo.png" alt="">
+                            <!-- .......... End Logo .......... -->
+                        </a>
+                    </div>
+                    <div class="logo logo--panel uk-hidden@m">
+                        <a href="#intro" data-uk-scroll>
+                            <!-- .......... Mobile Version Logo .......... -->
+                            <img src="img/logo.png" alt="" width="20%" height="20%">
+                            <!-- .......... End Mobile Version Logo .......... -->
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-width-2-3 uk-visible@m">
+                    <!-- .......... Navigation .......... -->
+                    <ul class="nav nav--panel js-scrollspy-nav uk-flex uk-flex-wrap">
+                        <li><a href="#about_us_old">About</a></li>
+                        <li><a href="#members">Members</a></li>
+                        <li><a href="#shows">Shows</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <!-- <li><a href="#news">News</a></li> -->
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                    <!-- .......... End Navigation .......... -->
+                </div>
+                <div class="uk-width-1-3 uk-width-1-6@m">
+                    <!-- .......... Player Controls .......... -->
+                    <div style="display:none">
+                        <div class="panel__player">
+                            <audio class="js-audio" preload="metadata"></audio>
+                            <button type="button" class="icon icon--play-pause icon--play js-panel-play"></button>
+                            <a class="mejs__horizontal-volume-slider js-panel-volume">
+                                <div class="mejs__horizontal-volume-total">
+                                    <div class="mejs__horizontal-volume-current"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- .......... End Player Controls .......... -->
+                </div>
+                <div class="uk-width-1-3 uk-hidden@m uk-text-right">
+                    <!-- .......... Navigation Toggle .......... -->
+                    <a href="#" data-uk-toggle="target: #offcanvas-nav">Menu</a>
+                    <!-- .......... End Navigation Toggle .......... -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- .......... End Fixed Top Panel .......... -->
+    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="modal__close uk-offcanvas-close" type="button" data-uk-close></button>
+            <!-- .......... Navigation .......... -->
+            <ul class="nav nav--offcanvas js-scrollspy-nav js-offcanvas-nav uk-flex">
+                <li><a href="#about_us_old">About</a></li>
+                <li><a href="#members">Members</a></li>
+                <!-- <li><a href="#music">Music</a></li> -->
+                <li><a href="#shows">Shows</a></li>
+                <li><a href="#video">Video</a></li>
+                <!-- <li><a href="#news">News</a></li> -->
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <!-- .......... End Navigation .......... -->
+        </div>
+    </div>
+
+    <!-- .......... Intro Section Start .......... -->
+    <section class="intro uk-margin-large-bottom">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid-collapse" data-uk-grid>
+                <div class="intro__sidebar uk-width-1-4@m uk-visible@m uk-position-relative">
+                    <div class="logo logo--intro">
+                        <!-- .......... Logo .......... -->
+                        <img src="img/logo.png" alt="">
+                        <!-- .......... End Logo .......... -->
+                    </div>
+                    <!-- .......... Navigation .......... -->
+                    <ul class="nav nav--intro uk-list js-scrollspy-nav">
+                        <li><a href="#about_us_old">About</a></li>
+                        <li><a href="#members">Members</a></li>
+                        <!-- <li><a href="#music">Music</a></li> -->
+                        <li><a href="#shows">Shows</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <!-- <li><a href="#news">News</a></li> -->
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                    <!-- .......... End Navigation .......... -->
+                    <!-- .......... Social Media .......... -->
+                    <div class="social__wrapper">
+                        <div class="social social--intro">
+                            <h6 class="uk-h4 social__title c-dark--4">Socials & Links</h6>
+                            <ul class="social__list uk-list uk-align-center">
+                                <li><a href="https://www.facebook.com/varietypack.rockband" target="_blank"><span
+                                            class="fab fa-facebook-f"></span></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLnZB1-HFKrqbZxtnjjvynz2L6SlxHD6Sm"
+                                        target="_blank"><span class="fab fa-youtube"></span></a></li>
+                                <li><a href="https://www.instagram.com/vpseattle" target="_blank"><span
+                                            class="fab fa-instagram"></span></a></li>
+                                <!-- <li><a href="#" target="_blank"><span class="fab fa-twitter"></span></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- .......... End Social Media .......... -->
+                </div>
+                <div class="uk-width-3-4@m">
+                    <div class="slider slider--intro uk-position-relative" data-uk-slideshow="animation: push">
+                        <!-- .......... Slider .......... -->
+                        <ul class="slider__items uk-slideshow-items">
+                            <li>
+                                <!-- This is the main slider -->
+                                <div class="slider__screen">
+                                    <div
+                                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center">
+                                        <img class="slider__image" src="img/photos/main-slider-img.jpg" alt=""
+                                            data-uk-cover>
+                                    </div>
+                                    <div class="slider__inner uk-position-top">
+                                        <!-- .......... Latest Events .......... -->
+                                        <!-- <div data-uk-slideshow-parallax="scale: 1,1,0.8">
+                                            <h3 class="events__title uk-h3 c-light"><span>Next Show</span></h3>
+                                            <h2 class="events__title uk-h2 c-light"><span>R.A Long Park, Longview WA</span></h2>
+                                            <h3 class="events__title uk-h3 c-light"><span>JUNE 22, 2024</span></h3>
+                                            <p><a href="#" data-uk-toggle="target: #article-longview-24"
+                                                    class="btn btn--more">Tickets <span
+                                                        class="icon icon--dots"></span></a></p>
+                                        </div>-->
+                                        <!-- .......... End Latest Events .......... -->
+                                    </div>
+                                </div>
+                            </li>
+                            <!--
+                            <li>
+                                <div class="slider__screen">
+                                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center">
+                                        <img class="slider__image" src="img/posters/Middleton.jpg" alt="" data-uk-cover>
+                                    </div>
+                                    <div class="slider__inner uk-position-top">
+                                        <div data-uk-slideshow-parallax="scale: 1,1,0.8">
+                                            <h3 class="events__title uk-h3 c-light"><span>sadsad</span></h3>
+                                            <h2 class="events__title uk-h2 c-light"><span>asd sad</span></h2>
+                                            <h3 class="events__title uk-h3 c-light"><span>aasd </span></h3>
+                                            <p><a href="https://youtu.be/" target="_blank" class="btn btn--more">Watch <span class="icon icon--dots"></span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        -->
+                        </ul>
+                        <!-- .......... Slider Controls .......... -->
+                        <a class="slider__control" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+                        <!-- .......... End Slider Controls .......... -->
+                        <!-- .......... Slider Navigation .......... -->
+                        <ul class="js-slider-intro-nav uk-slideshow-nav uk-dotnav uk-flex-column uk-flex-center"></ul>
+                        <!-- .......... End Slider Navigation .......... -->
+                        <!-- .......... End Slider .......... -->
+                    </div>
+                    <div class="events events--intro uk-position-relative uk-visible@l">
+                        <div class="events__grid--intro uk-child-width-1-4 uk-grid-small" data-uk-grid>
+                            <div class="events__title__wrap">
+                                <h3 class="events__title uk-h3 c-dark--4">Upcoming Shows</h3>
+                            </div>
+                            <!-- .......... Latest Events .......... -->
+                            <!--
+                            <div>
+                                <a href="#shows" data-uk-scroll="offset: 80">
+                                    <div class="events__block bg-dark--1 uk-grid-collapse" data-uk-grid>
+                                        <div class="events__date uk-width-auto">
+                                            <span class="events__day">22</span>
+                                            <span class="events__month">JUN</span>
+                                            <span class="events__year">2024</span>
+                                        </div>
+                                        <div class="events__location uk-width-expand">
+                                            <span class="events__place">R. A. Long Park</span>
+                                            <span class="events__club">Longview, WA</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            -->
+                            <!-- .......... End Latest Events .......... -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Intro Section .......... -->
+
+
+    <!-- .......... About Us Section .......... -->
+    <section id="about_us_old" class="about uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="uk-container uk-container-large">
+            <div class="about__grid uk-grid-collapse uk-flex" data-uk-grid>
+                <div class="uk-width-1-2@s">
+                    <div class="about__info">
+                        <h2 class="uk-h2">Variety Pack
+                        </h2>
+                        <p>
+                            Variety Pack is a Seattle-based Alice in Chains tribute band.
+                            We started out as a band that played a mixture of grunge songs from all grunge bands, ergo
+                            the name "Variety Pack".
+                            We enjoyed playing Alice in Chains covers so much that our setlists became overloaded with
+                            Alice in Chains.
+                            Soon, we decided to become an Alice in Chains tribute band and have started playing only
+                            Alice in Chains.
+                            The current line-up of the band has been together and playing Alice in Chains since 2019.
+                        </p>
+                        <p><img src="img/logo/logo-blue.png" alt="band logo" data-uk-img>
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@s uk-flex-first@s">
+                    <img class="about__photo" src="img/photos/about_us_2.jpeg" data-src="img/photos/about_us_2.jpg"
+                        alt="" data-uk-img>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .......... End About Us Section .......... -->
+
+
+    <!-- .......... Meet Team Section .......... -->
+    <section id="members" class="team uk-section uk-overflow-hidden"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container uk-position-relative">
+            <h3 class="team__title uk-h3"><span class="team__title_inner">Members</span></h3>
+            <div class="team__members uk-flex uk-flex-center" data-uk-grid
+                data-uk-scrollspy="cls:uk-animation-fade; target: .team__member__wrap; delay: 300">
+                <div class="team__member__wrap uk-width-1-2 uk-width-1-4@m">
+                    <a class="team__member" data-uk-toggle="target: #horacio">
+                        <div class="cover__photo uk-background-cover uk-transition-toggle"
+                            data-src="img/team/covers/horacio.jpg" data-uk-img>
+                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                        </div>
+                        <span class="team__name">Horacio Alcantar</span>
+                        <span class="team__vocation">Lead Vocal, Rhythm Guitar</span>
+                    </a>
+                </div>
+                <div class="team__member__wrap uk-width-1-2 uk-width-1-4@m">
+                    <a class="team__member" data-uk-toggle="target: #cristian">
+                        <div class="cover__photo uk-background-cover uk-transition-toggle"
+                            data-src="img/team/covers/cristian.jpg" data-uk-img>
+                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                        </div>
+                        <span class="team__name">Cristian Muñoz Urbancic</span>
+                        <span class="team__vocation">Lead Guitar, Vocal</span>
+                    </a>
+                </div>
+                <div class="team__member__wrap uk-width-1-2 uk-width-1-4@m">
+                    <a class="team__member" data-uk-toggle="target: #ragav">
+                        <div class="cover__photo uk-background-cover uk-transition-toggle"
+                            data-src="img/team/covers/ragav.jpg" data-uk-img>
+                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                        </div>
+                        <span class="team__name">Ragav Venkatesan</span>
+                        <span class="team__vocation">Bass, Production</span>
+                    </a>
+                </div>
+                <div class="team__member__wrap uk-width-1-2 uk-width-1-4@m">
+                    <a class="team__member" data-uk-toggle="target: #renato">
+                        <div class="cover__photo uk-background-cover uk-transition-toggle"
+                            data-src="img/team/covers/renato.jpg" data-uk-img>
+                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                        </div>
+                        <span class="team__name">Renato Valenzuela</span>
+                        <span class="team__vocation">Drums, Vocal</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Meet Team Section .......... -->
+
+
+    <!-- .......... Tour Section .......... -->
+    <section id="shows" class="events uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container">
+            <h2 class="uk-h2 uk-margin-bottom">Upcoming Shows</h2>
+            <div class="events__table list--striped bg-dark--1">
+
+                <!-- .......... Tour Item .......... -->
+                <!--
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">22</span>
+                        <span class="events__month">JUN</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Longview, WA</span>
+                        <span class="events__club">R. A. Long Park</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a target="_blank" href="https://craftnation.ticketspice.com/tacos-tequila?fbclid=IwZXh0bgNhZW0CMTAAAR0pIyBb1jENqZ9mvKlfP1bZhJF_Sjw5Y5fupOYDLfdVHgFbgeikzgCom1Y_aem_AYtZYvFP35SUY8m7PvHjTpG5DzqY8XKN_-UXWME6FIMao3UCVuXDd9olkd_KTtK9_wjIyJUnl1DdMB76aR2UcAXE" 
+                        class="btn">Info & Tickets</a>
+                    </div>
+                </div> -->
+                <!-- .......... End Tour Item .......... -->
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Tour Section .......... -->
+
+    <!-- .......... Tour Section .......... -->
+    <section id="past_tour" class="events uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container">
+            <h2 class="uk-h2 uk-margin-bottom">Past Shows</h2>
+            <div class="events__table list--striped bg-dark--1">
+
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">20</span>
+                        <span class="events__month">SEP</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Seattle, WA</span>
+                        <span class="events__club">Rendezvous, The Jewelbox Theater</span>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">22</span>
+                        <span class="events__month">JUN</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Longview, WA</span>
+                        <span class="events__club">R. A. Long Park</span>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">4</span>
+                        <span class="events__month">MAY</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Everett, WA</span>
+                        <span class="events__club">Middleton Brewery</span>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">9</span>
+                        <span class="events__month">MAR</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Portland, OR</span>
+                        <span class="events__club">Stage 722, Morrison Market</span>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">6</span>
+                        <span class="events__month">MAR</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Seattle, WA</span>
+                        <span class="events__club">High Dive</span>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">12</span>
+                        <span class="events__month">AUG</span>
+                        <span class="events__year">2023</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Seattle, WA</span>
+                        <span class="events__club">El Coraz&oacute;n</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-corazon-1-23" class="btn">Videos</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">15</span>
+                        <span class="events__month">JUL</span>
+                        <span class="events__year">2023</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Oakland, CA</span>
+                        <span class="events__club">Retro Junkie</span>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">14</span>
+                        <span class="events__month">JUL</span>
+                        <span class="events__year">2023</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">San Francisco, CA</span>
+                        <span class="events__club">The Chapel</span>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">18</span>
+                        <span class="events__month">MAR</span>
+                        <span class="events__year">2023</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Lynwood, WA</span>
+                        <span class="events__club">Vessel Taphouse</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-vessel-23" class="btn">Videos</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">14</span>
+                        <span class="events__month">JAN</span>
+                        <span class="events__year">2023</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Seattle, WA</span>
+                        <span class="events__club">El Coraz&oacute;n</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-corazon-2-23" class="btn">Videos</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">19</span>
+                        <span class="events__month">AUG</span>
+                        <span class="events__year">2022</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Lynwood, WA</span>
+                        <span class="events__club">Vessel Taphouse</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-vessel-22" class="btn">Videos</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Tour Section .......... -->
+
+
+    <!-- .......... Video Section .......... -->
+    <section id="video" class="video uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container uk-margin-large-bottom">
+            <h2 class="uk-h2">Videos from the Pandemic Era</h2>
+        </div>
+        <div class="js-video-slider container--special uk-container uk-container-large uk-position-relative"
+            tabindex="-1" data-uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l">
+
+                <!-- .......... Video Item .......... -->
+                <li class="video__column uk-width-2-3@s uk-width-1-2@m">
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=BMAVqZr_t7c"
+                        data-video-type="video/youtube"
+                        class="js-video-target video__placeholder video__placeholder--large uk-background-cover"
+                        data-src="https://img.youtube.com/vi/BMAVqZr_t7c/maxresdefault.jpg" title="Love, Hate, Love"
+                        data-uk-img>
+                        <span class="video__title">Love, Hate, Love</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                </li>
+                <!-- .......... End Video Item .......... -->
+
+                <li class="video__column">
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=s2sPq24I9AY"
+                        data-video-type="video/youtube" class="js-video-target video__placeholder uk-background-cover"
+                        data-src="https://img.youtube.com/vi/s2sPq24I9AY/maxresdefault.jpg" title="Down in a Hole"
+                        data-uk-img>
+                        <span class="video__title">Down in a Hole</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=eJrggM5fF5s"
+                        data-video-type="video/youtube"
+                        class="js-video-target video__placeholder video__placeholder--large uk-background-cover"
+                        data-src="img/posters/brother.jpg" title="Brother" data-uk-img>
+                        <span class="video__title">Brother</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=T1Xpisn75xc"
+                        data-video-type="video/youtube" class="js-video-target video__placeholder uk-background-cover"
+                        data-src="https://img.youtube.com/vi/T1Xpisn75xc/maxresdefault.jpg" title="Stone" data-uk-img>
+                        <span class="video__title">Stone</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                </li>
+
+                <li class="video__column">
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=95gRTgzbOPA"
+                        data-video-type="video/youtube" class="js-video-target video__placeholder uk-background-cover"
+                        data-src="https://img.youtube.com/vi/95gRTgzbOPA/maxresdefault.jpg" title="Sickman" data-uk-img>
+                        <span class="video__title">Sickman</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=T9P1cwkkaow"
+                        data-video-type="video/youtube" class="js-video-target video__placeholder uk-background-cover"
+                        data-src="https://img.youtube.com/vi/T9P1cwkkaow/maxresdefault.jpg" title="Red Giant"
+                        data-uk-img>
+                        <span class="video__title">Red Giant</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=aRTwCXV9uX4"
+                        data-video-type="video/youtube" class="js-video-target video__placeholder uk-background-cover"
+                        data-src="https://img.youtube.com/vi/aRTwCXV9uX4/maxresdefault.jpg" title="Hollow" data-uk-img>
+                        <span class="video__title">Hollow</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                </li>
+                <li class="video__column">
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=83RalCPZ2k4"
+                        data-video-type="video/youtube" class="js-video-target video__placeholder uk-background-cover"
+                        data-src="https://img.youtube.com/vi/83RalCPZ2k4/maxresdefault.jpg" title="Rain When I Die"
+                        data-uk-img>
+                        <span class="video__title">Rain When I Die</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                    <a href="#" data-video-src="https://www.youtube.com/watch?v=3h0EkJdNusg"
+                        data-video-type="video/youtube" class="js-video-target video__placeholder uk-background-cover"
+                        data-src="img/posters/angry_chair.jpg" title="Angry Chair" data-uk-img>
+                        <span class="video__title">Angry Chair</span>
+                        <span class="video__link icon icon--play"></span>
+                    </a>
+                </li>
+                <!-- .......... End Video Items .......... -->
+            </ul>
+            <!-- .......... Video Slider Controls .......... -->
+            <a class="slider__control uk-position-center-left" href="#" data-uk-slidenav-previous
+                data-uk-slider-item="previous"></a>
+            <a class="slider__control uk-position-center-right" href="#" data-uk-slidenav-next
+                data-uk-slider-item="next"></a>
+            <!-- .......... End Video Slider Controls .......... -->
+        </div>
+    </section>
+    <!-- .......... End Video Section .......... -->
+
+    <div style="display:none">
+        <!-- .......... News Section .......... -->
+        <section id="news" class="news uk-section"
+            data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+            <div class="container--min uk-container uk-margin-large-bottom">
+                <h2 class="uk-h2">News</h2>
+            </div>
+            <div class="container--special uk-container uk-container-large">
+                <div class="slider slider--news uk-position-relative" tabindex="-1" data-uk-slider="finite: true">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-grid"
+                        data-uk-grid>
+                        <!-- .......... News Item .......... -->
+                        <li>
+                            <div class="uk-card">
+                                <div class="uk-card-media-top">
+                                    <a href="#" data-uk-toggle="target: #"
+                                        class="cover__photo uk-background-cover uk-transition-toggle"
+                                        data-src="img/news/01.jpg" data-uk-img>
+                                        <span
+                                            class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                                    </a>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="news__title">I should be incapable of drawing a single stroke</h3>
+                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                        <div class="events__date uk-width-auto">
+                                            <span class="events__day">20</span>
+                                            <span class="events__month">SEP</span>
+                                            <span class="events__year">2021</span>
+                                        </div>
+                                        <a href="#" data-uk-toggle="target: #" class="news__more btn btn--more">Read
+                                            more<span class="icon icon--dots"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- .......... End News Item .......... -->
+                    </ul>
+                    <!-- .......... News Slider Controls .......... -->
+                    <a class="slider__control uk-position-center-left" href="#" data-uk-slidenav-previous
+                        data-uk-slider-item="previous"></a>
+                    <a class="slider__control uk-position-center-right" href="#" data-uk-slidenav-next
+                        data-uk-slider-item="next"></a>
+                    <!-- .......... End News Slider Controls .......... -->
+                </div>
+            </div>
+        </section>
+        <!-- .......... End News Section .......... -->
+    </div>
+
+    <!-- .......... Contacts Section .......... -->
+    <section id="contacts" class="contacts uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container">
+            <h2 class="uk-h2">Contacts</h2>
+            <div data-uk-grid>
+                <div class="uk-width-1-3@m">
+                    <!-- <h3 class="uk-h3">Organization of concerts</h3> -->
+                    <div data-uk-grid>
+                        <!-- .......... Contacts Details .......... -->
+                        <!--
+                        <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m">
+                            <strong class="contacts__subtitle">Call us:</strong>
+                            <br>
+                            <a href="tel:+999999999999">(9999) 999-999-99</a>
+                            <br>
+                            <a href="tel:+888888888888">(8888) 888-888-88</a>
+                        </p>
+                        -->
+                        <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m">
+                            <strong class="contacts__subtitle">E-mail:</strong>
+                            <br>
+                            <a href="mailto:booking@varietypack.band">booking@varietypack.band</a>
+                        </p>
+                        <!-- .......... End Contacts Details .......... -->
+                    </div>
+                </div>
+                <!-- .......... Feedback Form .......... -->
+                <!--
+                <div class="uk-width-2-3@m">
+                    <div class="uk-card bg-dark--1">
+                        <div class="contacts__form uk-card-body">
+                            <h3 class="uk-h3">Get in touch</h3>
+                            <form class="js-form" data-uk-grid>
+                                <div class="uk-width-1-2@s">
+                                    <input name="name" class="uk-input" type="text" placeholder="Name">
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <input name="email" class="uk-input" type="email" placeholder="E-mail*" data-require="true">
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <textarea name="message" class="uk-textarea" rows="5" placeholder="Message*" data-require="true"></textarea>
+                                </div>
+                                <div class="uk-width-1-1 uk-text-center">
+                                    <p class="form__respond js-respond"></p>
+                                    <input class="btn" type="submit" value="Send">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- .......... End Feedback Form .......... -->
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Contacts Section .......... -->
+
+    <!-- .......... Footer .......... -->
+    <footer class="footer bg-dark--1 uk-section uk-section-small">
+        <div class="container--min uk-container">
+            <div class="uk-flex uk-flex-between uk-child-width-auto" data-uk-grid>
+                <ul class="nav nav--footer js-scrollspy-nav uk-flex uk-flex-wrap">
+                    <li><a href="#about_us">Members</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#shows">Shows</a></li>
+                    <!-- <li><a href="#news">News</a></li> -->
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <!--
+                <ul class="nav nav--footer uk-flex uk-flex-wrap">
+                    <li><a href="#" data-uk-toggle="target: #modal-text">Terms of use</a></li>
+                    <li><a href="#" data-uk-toggle="target: #modal-text">Privacy Policy</a></li>
+                </ul>
+                -->
+            </div>
+            <div class="social social--footer">
+                <ul class="social__list uk-list uk-align-center">
+                    <li><a href="http://facebook.com/varietypack.rockband" target="_black"><span
+                                class="fab fa-facebook-f"></span></a></li>
+                    <!-- <li><a href="https://www.youtube.com/playlist?list=PLnZB1-HFKrqbZxtnjjvynz2L6SlxHD6Sm" target="_black"><span
+                                class="fab fa-youtube"></span></a></li> -->
+                    <li><a href="https://www.instagram.com/vpseattle" target="_black"><span
+                                class="fab fa-instagram"></span></a></li>
+                    <!-- <li><a href="https://soundcloud.com/" target="_black"><span
+                                class="fab fa-soundcloud"></span></a></li> -->
+                    <!--<li><a href="#" target="_black"><span class="fab fa-twitter"></span></a></li>-->
+                </ul>
+            </div>
+            <p class="footer__copyrights">
+                &copy;2017-2024 Variety Pack. All rights reserved.
+            </p>
+        </div>
+        <a href="#" class="footer__totop" data-uk-totop data-uk-scroll></a>
+    </footer>
+    <!-- .......... End Footer .......... -->
+
+
+    <!-- .......... Modal Windows .......... -->
+    <div id="horacio" data-uk-modal>
+        <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
+            <!--<div class="modal__cover uk-cover-container">
+                <img src="img/team/covers/horacio.jpg" data-src="img/team/covers/horacio.jpg" alt="" data-uk-cover>
+            </div>-->
+            <div class="modal__content">
+                <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/horacio.jpg"
+                    data-uk-img></div>-->
+                <br><br>
+                <h3 class="modal__profile__title uk-modal-title uk-text-center">Horacio Alcantar</h3>
+                <div class="modal__profile__subtitle uk-text-center">Lead Vocal</div>
+                <p class="uk-text-left">
+                    Horacio is the lead vocal and rhythm guitar player of Variety Pack.
+                    He is also a singer-songwriter in his own right and his solo album is available <a target="_blank"
+                        href="https://open.spotify.com/artist/777so6zgXVzf2MDjmIPptr?si=dpMAHFpDTHmO3HXWYWDikA">here</a>.
+                </p>
+                <div class="social social--modal">
+                    <ul class="social__list uk-list uk-align-center">
+                        <li><a href="https://www.facebook.com/horacio.alcantar/" target="_black"><span
+                                    class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="https://www.instagram.com/hac22477/" target="_black"><span
+                                    class="fab fa-instagram"></span></a></li>
+                        <li><a href="https://open.spotify.com/album/1apkwd7rw5yyXZEj6VPYaI?si=xTRxv5UxT9aO-Y5mPEdaoA&nd=1&dlsi=bcedbce8608643c6"
+                                target="_black"><span class="fab fa-spotify"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+        </div>
+    </div>
+    <div id="cristian" data-uk-modal>
+        <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
+            <!--
+            <div class="modal__cover uk-cover-container">
+                <img src="img/team/covers/cristian.jpg" data-src="img/team/covers/cristian.jpg" alt="" data-uk-cover>
+            </div>
+            -->
+            <div class="modal__content">
+                <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/crisitian.jpg"
+                    data-uk-img></div>-->
+                <br><br>
+                <h3 class="modal__profile__title uk-modal-title uk-text-center">Cristian Muñoz Urbancic</h3>
+                <div class="modal__profile__subtitle uk-text-center">Guitar, Vocal</div>
+                <p class="uk-text-left">
+                    Crisitan is a "man of few words". But he does have a great tone.
+                </p>
+
+                <div class="social social--modal">
+                    <ul class="social__list uk-list uk-align-center">
+                        <!-- <li><a href="#" target="_black"><span class="fab fa-facebook-f"></span></a></li> -->
+                        <li><a href="https://www.instagram.com/cmunozu/" target="_black"><span
+                                    class="fab fa-instagram"></span></a></li>
+                        <!-- <li><a href="#" target="_black"><span class="fab fa-twitter"></span></a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+        </div>
+    </div>
+    <div id="ragav" data-uk-modal>
+        <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
+            <!--
+            <div class="modal__cover uk-cover-container">
+                <img src="img/team/covers/ragav.jpg" data-src="img/team/covers/ragav.jpg" alt="" data-uk-cover>
+            </div>
+            -->
+            <div class="modal__content">
+                <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/ragav.jpg"
+                    data-uk-img></div>-->
+                <br><br>
+                <h3 class="modal__profile__title uk-modal-title uk-text-center">Ragav Venkatesan</h3>
+                <div class="modal__profile__subtitle uk-text-center">Bass, Production</div>
+                <p class="uk-text-left">
+                    Ragav is also a singer-songwriter and his solo EP is under-production.
+                    His music influences covers a wide range including Avial, Motherjane, AR Rahman, Snarky Puppy,
+                    Periphery, Iron Maiden, Alice in Chains, Opeth and Aristocrats.
+                    He is also the producer and sound engineer for Variety Pack.
+                </p>
+
+                <div class="social social--modal">
+                    <ul class="social__list uk-list uk-align-center">
+                        <!-- <li><a href="#" target="_black"><span class="fab fa-facebook-f"></span></a></li> -->
+                        <li><a href="https://www.instagram.com/ragavvenkatesan/" target="_black"><span
+                                    class="fab fa-instagram"></span></a></li>
+                        <!-- <li><a href="#" target="_black"><span class="fab fa-twitter"></span></a></li> -->
+                        <li><a href="https://open.spotify.com/artist/3ssz6wQFAbbyt5ivcaFuId" target="_black"><span
+                                    class="fab fa-spotify"></span></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+        </div>
+    </div>
+    <div id="renato" data-uk-modal>
+        <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
+            <!--
+            <div class="modal__cover uk-cover-container">
+                <img src="img/team/covers/renato.jpg" data-src="img/team/covers/renato.jpg" alt="" data-uk-cover>
+            </div>
+            -->
+            <div class="modal__content">
+                <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/renato.jpg"
+                    data-uk-img></div>-->
+                <br><br>
+                <h3 class="modal__profile__title uk-modal-title uk-text-center">Renato Valenzuela</h3>
+                <div class="modal__profile__subtitle uk-text-center">Drums, Vocal</div>
+                <p class="uk-text-left">
+                    Renato is Variety Pack's drummer.
+                    He doesn't like click tracks and love Manny's Beer with his slice of pizza.
+                </p>
+
+                <div class="social social--modal">
+                    <ul class="social__list uk-list uk-align-center">
+                        <!-- <li><a href="#" target="_black"><span class="fab fa-facebook-f"></span></a></li> -->
+                        <li><a href="https://www.instagram.com/renatoseattle/" target="_black"><span
+                                    class="fab fa-instagram"></span></a></li>
+                        <!-- <li><a href="#" target="_black"><span class="fab fa-twitter"></span></a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+        </div>
+    </div>
+
+    <div id="modal-video" data-uk-modal>
+        <div class="modal__video uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+        </div>
+    </div>
+
+    <div id="article-middleton-24" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-2 uk-background-cover uk-visible@m" data-src="img/posters/middleton.jpg"
+                    data-uk-img></div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Middleton Brewery, Everett, WA.</h2>
+                        <p>Variety Pack is playing an acoustic show at Middleton Brewery on 5/4/2024.
+                            This is a free show and it is also a family-friendly show, so bring your kids.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="article-corazon-1-23" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-2 uk-background-cover uk-visible@m" data-src="img/posters/corozon-1.jpg"
+                    data-uk-img></div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">El Coraz&oacute;n, Seattle, WA.</h2>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/umplLwwsQCQ?si=xh89r3gJqy66vNUC"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/63757wByfC4?si=pJmASRnTdcYK4CZR"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/6Gzlz0T-kkY?si=JDQcVjh-oD5dub8h"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/qNBur9ZHbFA?si=gPnR58DKLeLwN4oj"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/rlK1DelxAeE?si=shuxjE3x7n5uHYqq"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="article-vessel-23" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <!--<div class="cover__photo--1-2 uk-background-cover uk-visible@m"
+                    data-src="https://i9.ytimg.com/vi/rlK1DelxAeE/maxresdefault.jpg" data-uk-img></div> -->
+                <P></P>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Vessel, Lynwood, WA.</h2>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/wz-KvG3bIAo?si=j5lNK-V44s33NYz0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/ouiPhIdfyFQ?si=WxOM6BdHuO_ILRod"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/oy4fRxI29RI?si=K2hHmh8cSyFvF7fo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="article-corazon-2-23" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-2 uk-background-cover uk-visible@m" data-src="img/posters/corozon-2.jpg"
+                    data-uk-img></div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">El Coraz&oacute;n, Seattle, WA.</h2>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/AdJ46h76RlM?si=mV9zPyN27OtI1Uti"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Aa6LJwVjxWk?si=QTXKvJyWGfmyKHpo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/1AkUlLGWnY4?si=4dQsVD0mftQPdS6q"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="article-vessel-22" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <!--<div class="cover__photo--1-2 uk-background-cover uk-visible@m"
+                    data-src="https://i9.ytimg.com/vi/rlK1DelxAeE/maxresdefault.jpg" data-uk-img></div>-->
+                <P></P>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Vessel Taphouse, Lynwood, WA.</h2>
+                        <p>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/skssgc_wzbg?si=ABTfhI0uQMZOmqqV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .......... End Modal Windows .......... -->
+
+    <!-- .......... Scripts .......... -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- .......... End Scripts .......... -->
+
+</body>
+
+</html>
