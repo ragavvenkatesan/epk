@@ -1,11 +1,11 @@
 # Site settings
-title: Sludge Factory
-email: booking@sludgefactory.band
-description: "Welcome to the webpage of Sludge Factory."
-baseurl: "https://sludgefactory.band"
-url: "https://sludgefactory.band"
+title: Ragav Venkatesan
+email: booking@ragav.net
+description: "Welcome to the webpage of Ragav Venkatesan."
+baseurl: "https://ragav.net/epk"
+url: "https://ragav.net/epk"
 
-instagram_username: sludgefactory
+instagram_username: ragav.music
 
 # Build settings
 markdown: kramdown

@@ -7,8 +7,8 @@
 
 				// text to send
 				$texte = "Hi there,<br /><br />";
-				$texte = $texte . "Message from varietypack.band<br />";
-				$texte = $texte . "Thanks for contacting Variety Pack. We will get back to you ASAP!<br />";
+				$texte = $texte . "Message from ragav.net<br />";
+				$texte = $texte . "Thanks for contacting Ragav. We will get back to you ASAP!<br />";
 				$texte = $texte . "Name : $nom<br />";
 				$texte = $texte . "Email :  $mail<br /><br />";
 				$texte = $texte . "Message : $message<br /><br />";

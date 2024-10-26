@@ -5,8 +5,8 @@
 if (!empty($_POST)) {
 
 	$receive_email = '';
-	$subject = 'New message from Variety Pack';
-	$reply_to_email = 'booking@varietypack.band';
+	$subject = 'New message from Ragav';
+	$reply_to_email = 'booking@ragav.net';
 	$message = '';
 		
 	$headers = array(

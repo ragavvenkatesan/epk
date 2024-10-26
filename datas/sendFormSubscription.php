@@ -4,7 +4,7 @@
 
 				// Text to send
 				$texte = "Hi there,<br /><br />";
-				$texte = $texte . "Inscription from varietypack.band .<br />";
+				$texte = $texte . "Inscription from ragav.net .<br />";
 				$texte = $texte . "The elements entered in the form are as follows :<br />";
 				$texte = $texte . "Email :  $mail<br /><br />";
 				$texte = $texte . "This is an automatic message, do not reply to it.";
@@ -12,13 +12,13 @@
 				$texte = stripslashes($texte);
 
 				/// Recipient and subject of the message
-				$destinataire = "booking@varietypack.band"; // input your email here
+				$destinataire = "booking@ragav.net"; // input your email here
 				$objet = "Newsletter subscription from your < site name >"; // input your domain name here
 
 				//Headers
 	      $headers = array(
 	                      'Content-type' => 'text/html',
-	                      'From' => 'booking@varietypack.band', // input your email from here
+	                      'From' => 'booking@ragav.net', // input your email from here
 	                      'X-Mailer' => 'PHP/' . phpversion()
 	                  );
 
