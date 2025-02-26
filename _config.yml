@@ -1,9 +1,9 @@
 # Site settings
-title: Ragav Venkatesan
-email: booking@ragav.net
-description: "Welcome to the webpage of Ragav Venkatesan."
-baseurl: "https://ragav.net/epk"
-url: "https://ragav.net/epk"
+title: Chirality
+email: booking@chirality.band
+description: "Chirality."
+baseurl: "https://chirality.band"
+url: "https://chirality.band"
 
 instagram_username: ragav.music
 
