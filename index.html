@@ -1,877 +1,792 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="ie=edge" http-equiv="x-ua-compatible">
-        <!-- .......... Title .......... -->
-        <title>Chirality</title>
-        <!-- .......... End Title .......... -->
-        <!-- .......... Fonts and Extras .......... -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOverpass+Mono:700&display=swap">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
-        <!-- .......... End Fonts and Extras .......... -->
-        <!-- .......... Styles .......... -->
-        <link rel="stylesheet" href="css/uikit.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <!-- .......... End Styles .......... -->
-        <!-- .......... Favicons .......... -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="img/favicons/favicon-32x32.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="img/favicons/favicon-16x16.png"
-        >
-        <link rel="manifest" href="img/favicons/site.webmanifest">
-        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico">
-        <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-        <!-- .......... End Favicons .......... -->
-    </head>
-    <body class="loading">
-        <!-- .......... Preloader .......... -->
-        <div class="js-preloader preloader"></div>
-        <!-- .......... End Preloader .......... -->
-        <!-- .......... Fixed Top Panel Start .......... -->
-        <header class="panel js-panel">
-            <div class="container--panel uk-container uk-height-1-1">
-                <div class="uk-flex uk-flex-middle uk-height-1-1" data-uk-grid>
-                    <div class="uk-width-1-3 uk-width-1-6@m">
-                        <div class="logo logo--panel uk-visible@m">
-                            <a href="#intro" data-uk-scroll>
-                                <!-- .......... Logo .......... -->
-                                <!--<img src="img/logo.png" alt="">-->
-                                <!-- .......... End Logo .......... --></a>
-                        </div>
-                        <div class="logo logo--panel uk-hidden@m">
-                            <a href="#intro" data-uk-scroll>
-                                <!-- .......... Mobile Version Logo .......... -->
-                                <!-- <img src="img/logo.png" alt="" width="20%" height="20%"> -->
-                                <!-- .......... End Mobile Version Logo .......... --></a>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <!-- .......... Title .......... -->
+    <title>Chirality</title>
+    <!-- .......... End Title .......... -->
+    <!-- .......... Fonts and Extras .......... -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOverpass+Mono:700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <!-- .......... End Fonts and Extras .......... -->
+    <!-- .......... Styles .......... -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- .......... End Styles .......... -->
+    <!-- .......... Favicons .......... -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <!-- .......... End Favicons .......... -->
+</head>
+
+<body class="loading">
+    <!-- .......... Preloader .......... -->
+    <div class="js-preloader preloader"></div>
+    <!-- .......... End Preloader .......... -->
+    <!-- .......... Fixed Top Panel Start .......... -->
+    <header class="panel js-panel">
+        <div class="container--panel uk-container uk-height-1-1">
+            <div class="uk-flex uk-flex-middle uk-height-1-1" data-uk-grid>
+                <div class="uk-width-1-3 uk-width-1-6@m">
+                    <div class="logo logo--panel uk-visible@m">
+                        <a href="#intro" data-uk-scroll>
+                            <!-- .......... Logo .......... -->
+                            <!--<img src="img/logo.png" alt="">-->
+                            <!-- .......... End Logo .......... --></a>
+                    </div>
+                    <div class="logo logo--panel uk-hidden@m">
+                        <a href="#intro" data-uk-scroll>
+                            <!-- .......... Mobile Version Logo .......... -->
+                            <!-- <img src="img/logo.png" alt="" width="20%" height="20%"> -->
+                            <!-- .......... End Mobile Version Logo .......... --></a>
+                    </div>
+                </div>
+                <div class="uk-width-2-3 uk-visible@m">
+                    <!-- .......... Navigation .......... -->
+                    <ul class="nav nav--panel js-scrollspy-nav uk-flex uk-flex-wrap">
+                        <li>
+                            <a href="#about_us">About</a>
+                        </li>
+                        <li>
+                            <a href="#music">Music</a>
+                        </li>
+                        <li>
+                            <a href="#members">Members</a>
+                        </li>
+                        <li>
+                            <a href="#shows">Shows</a>
+                        </li>
+                        <li>
+                            <a href="#video">Video</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                    <!-- .......... End Navigation .......... -->
+                </div>
+                <div class="uk-width-1-3 uk-width-1-6@m">
+                    <!-- .......... Player Controls .......... -->
+                    <div style="display:none">
+                        <div class="panel__player">
+                            <audio class="js-audio" preload="metadata"></audio>
+                            <button type="button" class="icon icon--play-pause icon--play js-panel-play"></button>
+                            <a class="mejs__horizontal-volume-slider js-panel-volume">
+                                <div class="mejs__horizontal-volume-total">
+                                    <div class="mejs__horizontal-volume-current"></div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="uk-width-2-3 uk-visible@m">
-                        <!-- .......... Navigation .......... -->
-                        <ul class="nav nav--panel js-scrollspy-nav uk-flex uk-flex-wrap">
+                    <!-- .......... End Player Controls .......... -->
+                </div>
+                <div class="uk-width-1-3 uk-hidden@m uk-text-right">
+                    <!-- .......... Navigation Toggle .......... -->
+                    <a href="#" data-uk-toggle="target: #offcanvas-nav">Menu</a>
+                    <!-- .......... End Navigation Toggle .......... -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- .......... End Fixed Top Panel .......... -->
+    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="modal__close uk-offcanvas-close" type="button" data-uk-close></button>
+            <!-- .......... Navigation .......... -->
+            <ul class="nav nav--offcanvas js-scrollspy-nav js-offcanvas-nav uk-flex">
+                <li>
+                    <a href="#about_us">About</a>
+                </li>
+                <li>
+                    <a href="#members">Members</a>
+                </li>
+                <li>
+                    <a href="#music">Music</a>
+                </li>
+                <li>
+                    <a href="#shows">Shows</a>
+                </li>
+                <li>
+                    <a href="#video">Video</a>
+                </li>
+                <!-- <li><a href="#news">News</a></li> -->
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+            <!-- .......... End Navigation .......... -->
+        </div>
+    </div>
+    <!-- .......... Intro Section Start .......... -->
+    <section class="intro uk-margin-large-bottom">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid-collapse" data-uk-grid>
+                <div class="intro__sidebar uk-width-1-4@m uk-visible@m uk-position-relative">
+                    <div class="logo logo--intro">
+                        <!-- .......... Logo .......... -->
+                        <img src="img/logo.png" alt="">
+                        <!-- .......... End Logo .......... -->
+                    </div>
+                    <!-- .......... Navigation .......... -->
+                    <ul class="nav nav--intro uk-list js-scrollspy-nav">
+                        <li>
+                            <a href="#about_us">About</a>
+                        </li>
+                        <li>
+                            <a href="#members">Members</a>
+                        </li>
+                        <li>
+                            <a href="#music">Music</a>
+                        </li>
+                        <li>
+                            <a href="#shows">Shows</a>
+                        </li>
+                        <li>
+                            <a href="#video">Video</a>
+                        </li>
+                        <!-- <li><a href="#news">News</a></li> -->
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                    <!-- .......... End Navigation .......... -->
+                    <!-- .......... Social Media .......... -->
+                    <div class="social__wrapper">
+                        <div class="social social--intro">
+                            <h6 class="uk-h4 social__title c-dark--4">Socials & Links</h6>
+                            <ul class="social__list uk-list uk-align-center">
+                                <li>
+                                    <a href="https://www.instagram.com/chirality.band/" target="_blank">
+                                        <span class="fab fa-instagram"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://open.spotify.com/artist/3ssz6wQFAbbyt5ivcaFuId" target="_blank">
+                                        <span class="fab fa-spotify"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@chirality.band.official" target="_blank">
+                                        <span class="fab fa-youtube"></span>
+                                    </a>
+                                </li>
+                                <!-- <li><a href="#" target="_blank"><span class="fab fa-twitter"></span></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- .......... End Social Media .......... -->
+                </div>
+                <div class="uk-width-3-4@m">
+                    <div class="slider slider--intro uk-position-relative" data-uk-slideshow="animation: push">
+                        <!-- .......... Slider .......... -->
+                        <ul class="slider__items uk-slideshow-items">
                             <li>
-                                <a href="#about_us">About</a>
+                                <!-- This is the main slider -->
+                                <div class="slider__screen">
+                                    <div
+                                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center">
+                                        <img class="slider__image" src="img/photos/main-slider-img-1.jpg" alt=""
+                                            data-uk-cover>
+                                    </div>
+                                    <div class="slider__inner uk-position-top">
+                                        <!-- .......... Latest Events .......... -->
+                                        <div data-uk-slideshow-parallax="scale: 1,1,0.8">
+                                            <h3 class="events__title uk-h3 c-light">
+                                                <span>Next Show: Mar 14</span>
+                                            </h3>
+                                            <h2 class="events__title uk-h2 c-light">
+                                                <span>
+                                                    Central Saloon, Seattle,
+                                                    WA.
+                                                </span>
+                                            </h2>
+                                            <p>
+                                                <a href="#" data-uk-toggle="target: #article-central-3-14-25"
+                                                    class="btn btn--more">
+                                                    Info & Tickets
+                                                    <span class="icon icon--dots"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!-- .......... End Latest Events .......... -->
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <a href="#music">Music</a>
-                            </li>
-                            <li>
-                                <a href="#members">Members</a>
-                            </li>
-                            <li>
-                                <a href="#shows">Shows</a>
-                            </li>
-                            <li>
-                                <a href="#video">Video</a>
-                            </li>
-                            <li>
-                                <a href="#contacts">Contacts</a>
+                                <div class="slider__screen">
+                                    <div
+                                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center">
+                                        <img class="slider__image" src="img/photos/main-slider-img-2.jpg" alt=""
+                                            data-uk-cover>
+                                    </div>
+                                    <div class="slider__inner uk-position-top">
+                                        <div data-uk-slideshow-parallax="scale: 1,1,0.8">
+                                            <h3 class="events__title uk-h3 c-light">
+                                                <span>Latest Release.</span>
+                                            </h3>
+                                            <h2 class="events__title uk-h2 c-light">
+                                                <span>Keg of Glory</span>
+                                            </h2>
+                                            <p>
+                                                <a href="#" data-uk-toggle="target: #article-keg-of-glory-release"
+                                                    class="btn btn--more">
+                                                    Info
+                                                    <span class="icon icon--dots"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                        <!-- .......... End Navigation .......... -->
+                        <!-- .......... Slider Controls .......... -->
+                        <a class="slider__control" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+                        <!-- .......... End Slider Controls .......... -->
+                        <!-- .......... Slider Navigation .......... -->
+                        <ul class="js-slider-intro-nav uk-slideshow-nav uk-dotnav uk-flex-column uk-flex-center"></ul>
+                        <!-- .......... End Slider Navigation .......... -->
+                        <!-- .......... End Slider .......... -->
                     </div>
-                    <div class="uk-width-1-3 uk-width-1-6@m">
-                        <!-- .......... Player Controls .......... -->
-                        <div style="display:none">
-                            <div class="panel__player">
-                                <audio class="js-audio" preload="metadata"></audio>
-                                <button type="button" class="icon icon--play-pause icon--play js-panel-play"></button>
-                                <a class="mejs__horizontal-volume-slider js-panel-volume">
-                                    <div class="mejs__horizontal-volume-total">
-                                        <div class="mejs__horizontal-volume-current"></div>
+                    <div class="events events--intro uk-position-relative uk-visible@l">
+                        <div class="events__grid--intro uk-child-width-1-4 uk-grid-small" data-uk-grid>
+                            <div class="events__title__wrap">
+                                <h3 class="events__title uk-h3 c-dark--4">Upcoming Shows</h3>
+                            </div>
+                            <!-- .......... Latest Events .......... -->
+                            <div>
+                                <a href="#shows" data-uk-scroll="offset: 80">
+                                    <div class="events__block bg-dark--1 uk-grid-collapse" data-uk-grid>
+                                        <div class="events__date uk-width-auto">
+                                            <span class="events__day">14</span>
+                                            <span class="events__month">MAR</span>
+                                            <span class="events__year">2025</span>
+                                        </div>
+                                        <div class="events__location uk-width-expand">
+                                            <span class="events__place">Central Saloon</span>
+                                            <span class="events__club">Seattle, WA</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
+                            <div>
+                                <a href="#shows" data-uk-scroll="offset: 80">
+                                    <div class="events__block bg-dark--1 uk-grid-collapse" data-uk-grid>
+                                        <div class="events__date uk-width-auto">
+                                            <span class="events__day">17</span>
+                                            <span class="events__month">APR</span>
+                                            <span class="events__year">2025</span>
+                                        </div>
+                                        <div class="events__location uk-width-expand">
+                                            <span class="events__place">Skylark Cafe</span>
+                                            <span class="events__club">Seattle, WA</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#shows" data-uk-scroll="offset: 80">
+                                    <div class="events__block bg-dark--1 uk-grid-collapse" data-uk-grid>
+                                        <div class="events__date uk-width-auto">
+                                            <span class="events__day">1</span>
+                                            <span class="events__month">May</span>
+                                            <span class="events__year">2025</span>
+                                        </div>
+                                        <div class="events__location uk-width-expand">
+                                            <span class="events__place">Chop Suey</span>
+                                            <span class="events__club">Seattle, WA</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- .......... End Latest Events .......... -->
                         </div>
-                        <!-- .......... End Player Controls .......... -->
-                    </div>
-                    <div class="uk-width-1-3 uk-hidden@m uk-text-right">
-                        <!-- .......... Navigation Toggle .......... -->
-                        <a href="#" data-uk-toggle="target: #offcanvas-nav">Menu</a>
-                        <!-- .......... End Navigation Toggle .......... -->
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- .......... End Fixed Top Panel .......... -->
-        <div id="offcanvas-nav" data-uk-offcanvas="flip: true; mode: push; overlay: true">
-            <div class="uk-offcanvas-bar">
-                <button class="modal__close uk-offcanvas-close" type="button" data-uk-close></button>
-                <!-- .......... Navigation .......... -->
-                <ul class="nav nav--offcanvas js-scrollspy-nav js-offcanvas-nav uk-flex">
-                    <li>
-                        <a href="#about_us">About</a>
-                    </li>
-                    <li>
-                        <a href="#members">Members</a>
-                    </li>
-                    <li>
-                        <a href="#music">Music</a>
-                    </li>
-                    <li>
-                        <a href="#shows">Shows</a>
-                    </li>
-                    <li>
-                        <a href="#video">Video</a>
-                    </li>
-                    <!-- <li><a href="#news">News</a></li> -->
-                    <li>
-                        <a href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-                <!-- .......... End Navigation .......... -->
             </div>
         </div>
-        <!-- .......... Intro Section Start .......... -->
-        <section class="intro uk-margin-large-bottom">
-            <div class="uk-container uk-container-large">
-                <div class="uk-grid-collapse" data-uk-grid>
-                    <div class="intro__sidebar uk-width-1-4@m uk-visible@m uk-position-relative">
-                        <div class="logo logo--intro">
-                            <!-- .......... Logo .......... -->
-                            <img src="img/logo.png" alt="">
-                            <!-- .......... End Logo .......... -->
-                        </div>
-                        <!-- .......... Navigation .......... -->
-                        <ul class="nav nav--intro uk-list js-scrollspy-nav">
-                            <li>
-                                <a href="#about_us">About</a>
-                            </li>
-                            <li>
-                                <a href="#members">Members</a>
-                            </li>
-                            <li>
-                                <a href="#music">Music</a>
-                            </li>
-                            <li>
-                                <a href="#shows">Shows</a>
-                            </li>
-                            <li>
-                                <a href="#video">Video</a>
-                            </li>
-                            <!-- <li><a href="#news">News</a></li> -->
-                            <li>
-                                <a href="#contacts">Contacts</a>
-                            </li>
-                        </ul>
-                        <!-- .......... End Navigation .......... -->
-                        <!-- .......... Social Media .......... -->
-                        <div class="social__wrapper">
-                            <div class="social social--intro">
-                                <h6 class="uk-h4 social__title c-dark--4">Socials & Links</h6>
-                                <ul class="social__list uk-list uk-align-center">
-                                    <li>
-                                        <a href="https://www.instagram.com/chirality.band/" target="_blank">
-                                            <span class="fab fa-instagram"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://open.spotify.com/artist/3ssz6wQFAbbyt5ivcaFuId" target="_blank">
-                                            <span class="fab fa-spotify"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.youtube.com/@chirality.band.official" target="_blank">
-                                            <span class="fab fa-youtube"></span>
-                                        </a>
-                                    </li>
-                                    <!-- <li><a href="#" target="_blank"><span class="fab fa-twitter"></span></a></li> -->
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- .......... End Social Media .......... -->
-                    </div>
-                    <div class="uk-width-3-4@m">
-                        <div class="slider slider--intro uk-position-relative" data-uk-slideshow="animation: push">
-                            <!-- .......... Slider .......... -->
-                            <ul class="slider__items uk-slideshow-items">
-                                <li>
-                                    <!-- This is the main slider -->
-                                    <div class="slider__screen">
-                                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center">
-                                            <img
-                                                class="slider__image"
-                                                src="img/photos/main-slider-img-1.jpg"
-                                                alt=""
-                                                data-uk-cover
-                                            >
-                                        </div>
-                                        <div class="slider__inner uk-position-top">
-                                            <!-- .......... Latest Events .......... -->
-                                            <div data-uk-slideshow-parallax="scale: 1,1,0.8">
-                                                <h3 class="events__title uk-h3 c-light">
-                                                    <span>Next Show: Mar 14</span>
-                                                </h3>
-                                                <h2 class="events__title uk-h2 c-light">
-                                                    <span>
-                                                        Central Saloon, Seattle,
-                                                    WA.
-                                                    </span>
-                                                </h2>
-                                                <p>
-                                                    <a href="#" data-uk-toggle="target: #article-central-3-14-25" class="btn btn--more">
-                                                        Info & Tickets
-                                                        <span class="icon icon--dots"></span>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                            <!-- .......... End Latest Events .......... -->
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="slider__screen">
-                                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center">
-                                            <img
-                                                class="slider__image"
-                                                src="img/photos/main-slider-img-2.jpg"
-                                                alt=""
-                                                data-uk-cover
-                                            >
-                                        </div>
-                                        <div class="slider__inner uk-position-top">
-                                            <div data-uk-slideshow-parallax="scale: 1,1,0.8">
-                                                <h3 class="events__title uk-h3 c-light">
-                                                    <span>Latest Release.</span>
-                                                </h3>
-                                                <h2 class="events__title uk-h2 c-light">
-                                                    <span>Keg of Glory</span>
-                                                </h2>
-                                                <p>
-                                                    <a href="#" data-uk-toggle="target: #article-keg-of-glory-release" class="btn btn--more">
-                                                        Info
-                                                        <span class="icon icon--dots"></span>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- .......... Slider Controls .......... -->
-                            <a
-                                class="slider__control"
-                                href="#"
-                                data-uk-slidenav-next
-                                data-uk-slideshow-item="next"
-                            ></a>
-                            <!-- .......... End Slider Controls .......... -->
-                            <!-- .......... Slider Navigation .......... -->
-                            <ul class="js-slider-intro-nav uk-slideshow-nav uk-dotnav uk-flex-column uk-flex-center"></ul>
-                            <!-- .......... End Slider Navigation .......... -->
-                            <!-- .......... End Slider .......... -->
-                        </div>
-                        <div class="events events--intro uk-position-relative uk-visible@l">
-                            <div class="events__grid--intro uk-child-width-1-4 uk-grid-small" data-uk-grid>
-                                <div class="events__title__wrap">
-                                    <h3 class="events__title uk-h3 c-dark--4">Upcoming Shows</h3>
-                                </div>
-                                <!-- .......... Latest Events .......... -->
-                                <div>
-                                    <a href="#shows" data-uk-scroll="offset: 80">
-                                        <div class="events__block bg-dark--1 uk-grid-collapse" data-uk-grid>
-                                            <div class="events__date uk-width-auto">
-                                                <span class="events__day">14</span>
-                                                <span class="events__month">MAR</span>
-                                                <span class="events__year">2025</span>
-                                            </div>
-                                            <div class="events__location uk-width-expand">
-                                                <span class="events__place">Central Saloon</span>
-                                                <span class="events__club">Seattle, WA</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#shows" data-uk-scroll="offset: 80">
-                                        <div class="events__block bg-dark--1 uk-grid-collapse" data-uk-grid>
-                                            <div class="events__date uk-width-auto">
-                                                <span class="events__day">17</span>
-                                                <span class="events__month">APR</span>
-                                                <span class="events__year">2025</span>
-                                            </div>
-                                            <div class="events__location uk-width-expand">
-                                                <span class="events__place">Skylark Cafe</span>
-                                                <span class="events__club">Seattle, WA</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#shows" data-uk-scroll="offset: 80">
-                                        <div class="events__block bg-dark--1 uk-grid-collapse" data-uk-grid>
-                                            <div class="events__date uk-width-auto">
-                                                <span class="events__day">1</span>
-                                                <span class="events__month">May</span>
-                                                <span class="events__year">2025</span>
-                                            </div>
-                                            <div class="events__location uk-width-expand">
-                                                <span class="events__place">Chop Suey</span>
-                                                <span class="events__club">Seattle, WA</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- .......... End Latest Events .......... -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- .......... End Intro Section .......... -->
-        <!-- .......... About Us Section .......... -->
-        <section id="about_us" class="about uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-            <div class="uk-container uk-container-large">
-                <div class="about__grid uk-grid-collapse uk-flex" data-uk-grid>
-                    <div class="uk-width-1-2@s">
-                        <div class="about__info">
-                            <h2 class="uk-h2">
-                                Chirality
-                            </h2>
-                            <h4>
-                                The Ragav Project
-                            </h4>
-                            <p>
-                                Chirality started out as the 'Ragav' project, after trauma from a previous band that co-founded,
+    </section>
+    <!-- .......... End Intro Section .......... -->
+    <!-- .......... About Us Section .......... -->
+    <section id="about_us" class="about uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="uk-container uk-container-large">
+            <div class="about__grid uk-grid-collapse uk-flex" data-uk-grid>
+                <div class="uk-width-1-2@s">
+                    <div class="about__info">
+                        <h2 class="uk-h2">
+                            Chirality
+                        </h2>
+                        <h4>
+                            The Ragav Project
+                        </h4>
+                        <p>
+                            Chirality started out as the 'Ragav' project, after trauma from a previous band that
+                            co-founded,
                             and having seen integrity and ethical issues in that band.
                             The Ragav project evolved into a unique identity and in-time became Chirality of today.
-                            
+
                             As an immigrant to the US and having grown up among many different cultures, Ragav's musical
                             tastes are as much a melting pot as my adopted country.
-                            The 'Ragav' project was, and Chirality remains today an east meets west fusion, that is a musical expression of this very
+                            The 'Ragav' project was, and Chirality remains today an east meets west fusion, that is a
+                            musical expression of this very
                             melting pot of cultures.
                             It fuses together genres as far away as South-Indian Carnatic, and progressive Metal.
                             The song writing is emblematic of this same blend of cultures - from homefree, which is a
                             positive spin on the immigrant experience in the US, to dual states of existence, which is a
                             song that carries stereotypically Seattle-grunge themes of being lost among a chaotic world.
-                                <table>
-                                    <tr>
-                                        <td>Genre</td>
-                                        <td>
-                                            <ul>
-                                                <li>Progressive-Rock</li>
-                                                <li>Carnatic</li>
-                                                <li>Grunge</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Similar Acts</td>
-                                        <td>
-                                            <ul>
-                                                <li>Opeth</li>
-                                                <li>Porcupine Tree</li>
-                                                <li>Deftones</li>
-                                                <li>Motherjane</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </p>
-                            <p>
-                                Consequently, Chirality draws a diverse audience from a variety of different musical
+                        <table>
+                            <tr>
+                                <td>Genre</td>
+                                <td>
+                                    <ul>
+                                        <li>Progressive-Rock</li>
+                                        <li>Carnatic</li>
+                                        <li>Grunge</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Similar Acts</td>
+                                <td>
+                                    <ul>
+                                        <li>Opeth</li>
+                                        <li>Porcupine Tree</li>
+                                        <li>Deftones</li>
+                                        <li>Motherjane</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
+                        <p>
+                            Consequently, Chirality draws a diverse audience from a variety of different musical
                             afflictions.
                             There is a large closeted metalhead audience-base among the immigrant tech-community of
                             Seattle that is eager for new original music,
                             having followed bands such as
-                                <a target="_blank" href="https://open.spotify.com/artist/2dJEdZ3JefqNjAz9KH3qnK">Motherjane</a>
-                                and
-                                <a target="_blank" href="https://open.spotify.com/artist/29z5chNteRELh8vVAnKind">Avial</a>
-                                .
+                            <a target="_blank"
+                                href="https://open.spotify.com/artist/2dJEdZ3JefqNjAz9KH3qnK">Motherjane</a>
+                            and
+                            <a target="_blank" href="https://open.spotify.com/artist/29z5chNteRELh8vVAnKind">Avial</a>
+                            .
                             There is also a new wave of local Seattle audiences from fans of bands such as Alice in
                             Chains to those such as Porcupine Tree, that
                             are also very receptive to this style of east-meets-west fusion-metal music.
-                            </p>
-                            <p>
-                                <table>
-                                    <tr>
-                                        <td>Radio Plays</td>
-                                        <td>
-                                            <ul>
-                                                <li>Local Roots North West; PDX Radio Project - 99.1 FM</li>
-                                                <li>NW Orbit; Space - 101.1 FM</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </p>
-                        </div>
+                        </p>
+                        <p>
+                        <table>
+                            <tr>
+                                <td>Radio Plays</td>
+                                <td>
+                                    <ul>
+                                        <li>Local Roots North West; PDX Radio Project - 99.1 FM</li>
+                                        <li>NW Orbit; Space - 101.1 FM</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
                     </div>
-                    <div class="uk-width-1-2@s uk-flex-first@s">
-                        <img
-                            class="about__photo"
-                            src="img/photos/about_us_1.jpg"
-                            data-src="img/photos/about_us_1.jpg"
-                            alt=""
-                            data-uk-img
-                        >
-                        <img
-                            class="about__photo"
-                            src="img/photos/about_us_2.jpg"
-                            data-src="img/photos/about_us_2.jpg"
-                            alt=""
-                            data-uk-img
-                        >
-                    </div>
+                </div>
+                <div class="uk-width-1-2@s uk-flex-first@s">
+                    <img class="about__photo" src="img/photos/about_us_1.jpg" data-src="img/photos/about_us_1.jpg"
+                        alt="" data-uk-img>
+                    <img class="about__photo" src="img/photos/about_us_2.jpg" data-src="img/photos/about_us_2.jpg"
+                        alt="" data-uk-img>
                 </div>
             </div>
-        </section>
-        <!-- .......... End About Us Section .......... -->
-        <!-- .......... Music Section .......... -->
-        <section id="music" class="music uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-            <div class="container--min uk-container">
-                <h2 class="uk-h2">Music</h2>
-                <div class="uk-child-width-1-1  uk-width-1-1@m" data-uk-grid>
-                    <div class="playlist__wrap">
-                        <div class="uk-switcher">
-                            <!-- .......... Album Tracks .......... -->
-                            <div class="playlist bg-dark--1 uk-active">
-                                <div class="albums albums--playlist albums__item">
-                                    <iframe
-                                        style="border-radius:12px"
-                                        src="https://open.spotify.com/embed/artist/3ssz6wQFAbbyt5ivcaFuId?utm_source=generator&theme=0"
-                                        width="100%"
-                                        height="152"
-                                        frameBorder="0"
-                                        allowfullscreen=""
-                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                        loading="lazy"
-                                    ></iframe>
-                                    <div class="albums__buy uk-visible@s">
-                                        <h6 class="albums__buy_title uk-h6">Available on</h6>
-                                        <div class="albums__buy_buttons">
-                                            <a href="https://music.youtube.com/channel/UCdhLEHmdKfr_9IdVcWtnvIg" target="_blank">
-                                                <span class="fab fa-youtube"></span>
-                                            </a>
-                                            <a href="https://open.spotify.com/artist/3ssz6wQFAbbyt5ivcaFuId?si=YykM4GmFTxufmD0P7UL17w&nd=1&dlsi=763caec0a45a4794" target="_blank">
-                                                <span class="fab fa-spotify"></span>
-                                            </a>
-                                            <a href="https://music.amazon.com/artists/B0CBJCDHXZ/ragav-venkatesan" target="_blank">
-                                                <span class="fab fa-amazon"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .......... End Album Tracks .......... -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- .......... End Music Section .......... -->
-        <!-- .......... Meet Team Section .......... -->
-        <section id="members" class="team uk-section uk-overflow-hidden" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-            <div class="container--min uk-container uk-position-relative">
-                <h3 class="team__title uk-h3">
-                    <span class="team__title_inner">Members</span>
-                </h3>
-                <div class="team__members uk-flex uk-flex-center" data-uk-grid data-uk-scrollspy="cls:uk-animation-fade; target: .team__member__wrap; delay: 300">
-                    <div class="team__member__wrap uk-width-1-2 uk-width-1-3@m">
-                        <a class="team__member" data-uk-toggle="target: #ragav">
-                            <div class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/team/covers/ragav.jpg" data-uk-img>
-                                <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
-                            </div>
-                            <span class="team__name">Ragav Venkatesan</span>
-                            <span class="team__vocation">Lead Vocal, Rhythm Guitar</span>
-                        </a>
-                    </div>
-                    <div class="team__member__wrap uk-width-1-2 uk-width-1-3@m">
-                        <a class="team__member" data-uk-toggle="target: #eshaan">
-                            <div class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/team/covers/eshaan.jpg" data-uk-img>
-                                <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
-                            </div>
-                            <span class="team__name">Eshaan Thakar</span>
-                            <span class="team__vocation">Drums</span>
-                        </a>
-                    </div>
-                    <div class="team__member__wrap uk-width-1-2 uk-width-1-3@m">
-                        <a class="team__member" data-uk-toggle="target: #aravind">
-                            <div class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/team/covers/aravind.jpg" data-uk-img>
-                                <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
-                            </div>
-                            <span class="team__name">Aravind Nidadavolu</span>
-                            <span class="team__vocation">Bass</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- .......... End Meet Team Section .......... -->
-        <!-- .......... Tour Section .......... -->
-        <section id="shows" class="events uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-            <div class="container--min uk-container">
-                <h2 class="uk-h2 uk-margin-bottom">Upcoming Shows</h2>
-                <div class="events__table list--striped bg-dark--1">
-                    <!-- .......... Tour Item .......... -->
-                    <div class="list__item">
-                        <div class="events__date uk-width-auto">
-                            <span class="events__day">14</span>
-                            <span class="events__month">MAR</span>
-                            <span class="events__year">2025</span>
-                        </div>
-                        <div class="events__location uk-width-expand">
-                            <span class="events__place">Central Saloon</span>
-                            <span class="events__club">Seattle, WA</span>
-                        </div>
-                        <div class="events__booking uk-width-1-1 uk-width-1-3@s">
-                            <a href="#" data-uk-toggle="target: #article-central-3-14-25" class="btn">Info & Tickets</a>
-                        </div>
-                    </div>
-                    <!-- .......... End Tour Item .......... -->
-                    <!-- .......... Tour Item .......... -->
-                    <div class="list__item">
-                        <div class="events__date uk-width-auto">
-                            <span class="events__day">17</span>
-                            <span class="events__month">APR</span>
-                            <span class="events__year">2025</span>
-                        </div>
-                        <div class="events__location uk-width-expand">
-                            <span class="events__place">Skylark Cafe</span>
-                            <span class="events__club">Seattle, WA</span>
-                        </div>
-                        <div class="events__booking uk-width-1-1 uk-width-1-3@s">
-                            <a href="#" data-uk-toggle="target: #article-skylark-4-17-25" class="btn">Info & Tickets</a>
-                        </div>
-                    </div>
-                    <!-- .......... End Tour Item .......... -->
-                    <!-- .......... Tour Item .......... -->
-                    <div class="list__item">
-                        <div class="events__date uk-width-auto">
-                            <span class="events__day">1</span>
-                            <span class="events__month">MAY</span>
-                            <span class="events__year">2025</span>
-                        </div>
-                        <div class="events__location uk-width-expand">
-                            <span class="events__place">Chop Suey</span>
-                            <span class="events__club">Seattle, WA</span>
-                        </div>
-                        <div class="events__booking uk-width-1-1 uk-width-1-3@s">
-                            <a href="#" data-uk-toggle="target: #article-chopsuey-5-1-25" class="btn">Info & Tickets</a>
-                        </div>
-                    </div>
-                    <!-- .......... End Tour Item .......... -->
-                </div>
-            </div>
-        </section>
-        <!-- .......... End Tour Section .......... -->
-        <!-- .......... Tour Section .......... -->
-        <section id="past_tour" class="events uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-            <div class="container--min uk-container">
-                <h2 class="uk-h2 uk-margin-bottom">Past Shows</h2>
-                <div class="events__table list--striped bg-dark--1">
-                    <!-- .......... Tour Item .......... -->
-                    <div class="list__item">
-                        <div class="events__date uk-width-auto">
-                            <span class="events__day">23</span>
-                            <span class="events__month">FEB</span>
-                            <span class="events__year">2025</span>
-                        </div>
-                        <div class="events__location uk-width-expand">
-                            <span class="events__place">Sunset Tavern</span>
-                            <span class="events__club">Seattle, WA</span>
-                        </div>
-                        <div class="events__booking uk-width-1-1 uk-width-1-3@s">
-                            <a href="#" data-uk-toggle="target: #article-sunset-2-23-25" class="btn">Highlights</a>
-                        </div>
-                    </div>
-                    <!-- .......... End Tour Item .......... -->
-                    <!-- .......... Tour Item .......... -->
-                    <div class="list__item">
-                        <div class="events__date uk-width-auto">
-                            <span class="events__day">1</span>
-                            <span class="events__month">FEB</span>
-                            <span class="events__year">2025</span>
-                        </div>
-                        <div class="events__location uk-width-expand">
-                            <span class="events__place">No Fun Bar</span>
-                            <span class="events__club">Portland, OR</span>
-                        </div>
-                        <div class="events__booking uk-width-1-1 uk-width-1-3@s">
-                            <a href="#" data-uk-toggle="target: #article-nofun-2-1-25" class="btn">Highlights</a>
-                        </div>
-                    </div>
-                    <!-- .......... End Tour Item .......... -->
-                    <!-- .......... Tour Item .......... -->
-                    <div class="list__item">
-                        <div class="events__date uk-width-auto">
-                            <span class="events__day">12</span>
-                            <span class="events__month">SEP</span>
-                            <span class="events__year">2024</span>
-                        </div>
-                        <div class="events__location uk-width-expand">
-                            <span class="events__place">Blue Moon Tavern</span>
-                            <span class="events__club">Seattle, WA</span>
-                        </div>
-                        <div class="events__booking uk-width-1-1 uk-width-1-3@s">
-                            <a href="#" data-uk-toggle="target: #article-bluemoon-9-12-24" class="btn">Highlights</a>
-                        </div>
-                    </div>
-                    <!-- .......... End Tour Item .......... -->
-                    <!-- .......... Tour Item .......... -->
-                    <div class="list__item">
-                        <div class="events__date uk-width-auto">
-                            <span class="events__day">30</span>
-                            <span class="events__month">July</span>
-                            <span class="events__year">2024</span>
-                        </div>
-                        <div class="events__location uk-width-expand">
-                            <span class="events__place">High Dive</span>
-                            <span class="events__club">Seattle, WA</span>
-                        </div>
-                        <div class="events__booking uk-width-1-1 uk-width-1-3@s">
-                            <a href="#" data-uk-toggle="target: #article-highdive-7-30-24" class="btn">Highlights</a>
-                        </div>
-                    </div>
-                    <!-- .......... End Tour Item .......... -->
-                </div>
-            </div>
-        </section>
-        <!-- .......... End Tour Section .......... -->
-        <!-- ........... Bands in town .............-->
-        <div style="display:none">
-            <section id="past_tour" class="events uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-                <div class="container--min uk-container">
-                    <h2 class="uk-h2 uk-margin-bottom">Bands in town</h2>
-                    <div class="events__table list--striped bg-dark--1">
-                        <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
-                        <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
-                        <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
-                        <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
-                        <a
-                            class="bit-widget-initializer"
-                            data-artist-name="id_15556032"
-                            data-events-to-display=""
-                            data-background-color="rgba(47,44,91,1)"
-                            data-separator-color="rgba(146,148,199,1)"
-                            data-text-color="rgba(255,255,255,1)"
-                            data-font="Verdana"
-                            data-auto-style="true"
-                            data-button-label-capitalization="uppercase"
-                            data-header-capitalization="uppercase"
-                            data-location-capitalization="uppercase"
-                            data-venue-capitalization="uppercase"
-                            data-display-local-dates="true"
-                            data-local-dates-position="tab"
-                            data-display-past-dates="true"
-                            data-display-details="true"
-                            data-display-lineup="true"
-                            data-display-start-time="false"
-                            data-social-share-icon="true"
-                            data-display-limit="all"
-                            data-date-format="MMM. D, YYYY"
-                            data-date-orientation="horizontal"
-                            data-date-border-color="#4A4A4A"
-                            data-date-border-width="1px"
-                            data-date-capitalization="capitalize"
-                            data-date-border-radius="10px"
-                            data-event-ticket-cta-size="small"
-                            data-event-custom-ticket-text=""
-                            data-event-ticket-text="TICKETS"
-                            data-event-ticket-icon="false"
-                            data-event-ticket-cta-text-color="rgba(255,255,255,1)"
-                            data-event-ticket-cta-bg-color="rgba(109,2,229,1)"
-                            data-event-ticket-cta-border-color="rgba(109,2,229,1)"
-                            data-event-ticket-cta-border-width="0px"
-                            data-event-ticket-cta-border-radius="2px"
-                            data-sold-out-button-text-color="rgba(255,255,255,1)"
-                            data-sold-out-button-background-color="rgba(74,74,74,1)"
-                            data-sold-out-button-border-color="rgba(74,74,74,1)"
-                            data-sold-out-button-clickable="true"
-                            data-event-rsvp-position="left"
-                            data-event-rsvp-cta-size="medium"
-                            data-event-rsvp-only-show-icon="false"
-                            data-event-rsvp-text="RSVP"
-                            data-event-rsvp-icon="false"
-                            data-event-rsvp-cta-text-color="rgba(255,255,255,1)"
-                            data-event-rsvp-cta-bg-color="rgba(109,2,229,1)"
-                            data-event-rsvp-cta-border-color="rgba(109,2,229,1)"
-                            data-event-rsvp-cta-border-width="1px"
-                            data-event-rsvp-cta-border-radius="2px"
-                            data-follow-section-position="top"
-                            data-follow-section-alignment="center"
-                            data-follow-section-header-text="RSVP & TICKETS"
-                            data-follow-section-cta-size="medium"
-                            data-follow-section-cta-text="FOLLOW"
-                            data-follow-section-cta-icon="true"
-                            data-follow-section-cta-text-color="rgba(255,255,255,1)"
-                            data-follow-section-cta-bg-color="rgba(109,2,229,1)"
-                            data-follow-section-cta-border-color="rgba(109,2,229,1)"
-                            data-follow-section-cta-border-width="0px"
-                            data-follow-section-cta-border-radius="2px"
-                            data-play-my-city-position="hidden"
-                            data-play-my-city-alignment="center"
-                            data-play-my-city-header-text="Don’t see a show near you?"
-                            data-play-my-city-cta-size="medium"
-                            data-play-my-city-cta-text="REQUEST A SHOW"
-                            data-play-my-city-cta-icon="false"
-                            data-play-my-city-cta-text-color="rgba(255,255,255,1)"
-                            data-play-my-city-cta-bg-color="rgba(74,74,74,1)"
-                            data-play-my-city-cta-border-color="rgba(74,74,74,1)"
-                            data-play-my-city-cta-border-width="0px"
-                            data-play-my-city-cta-border-radius="2px"
-                            data-optin-font=""
-                            data-optin-text-color=""
-                            data-optin-bg-color=""
-                            data-optin-cta-text-color=""
-                            data-optin-cta-bg-color=""
-                            data-optin-cta-border-width=""
-                            data-optin-cta-border-radius=""
-                            data-optin-cta-border-color=""
-                            data-language="en"
-                            data-layout-breakpoint="500"
-                            data-app-id=""
-                            data-affil-code=""
-                            data-bit-logo-position="hidden"
-                            data-bit-logo-color="rgba(255,255,255,1)"
-                        ></a>
-                    </div>
-                </div>
-            </section>
         </div>
-        <!-- .......... Video Section .......... -->
-        <section id="video" class="video uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-            <div class="container--min uk-container uk-margin-large-bottom">
-                <h2 class="uk-h2">Videos</h2>
-            </div>
-            <div class="js-video-slider container--special uk-container uk-container-large uk-position-relative" tabindex="-1" data-uk-slider="finite: false">
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l">
-                    <!-- .......... Video Item .......... -->
-                    <li class="video__column uk-width-2-3@s uk-width-1-2@m">
-                        <div class="embed-container">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/-s-avDEeM5A?si=Wp_X19DrV10M86Wh"
-                                title="Yet, I Rise"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                    </li>
-                    <!-- .......... End Video Item .......... -->
-                    <!-- .......... Video Item .......... -->
-                    <li class="video__column uk-width-2-3@s uk-width-1-2@m">
-                        <div class="embed-container">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/gDkl24tsM8E?si=huID3W2edu4-19TG"
-                                title="Homefree"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                    </li>
-                    <!-- .......... End Video Item .......... -->
-                    <!-- .......... End Video Items .......... -->
-                </ul>
-                <!-- .......... Video Slider Controls .......... -->
-                <a
-                    class="slider__control uk-position-center-left"
-                    href="#"
-                    data-uk-slidenav-previous
-                    data-uk-slider-item="previous"
-                ></a>
-                <a
-                    class="slider__control uk-position-center-right"
-                    href="#"
-                    data-uk-slidenav-next
-                    data-uk-slider-item="next"
-                ></a>
-                <!-- .......... End Video Slider Controls .......... -->
-            </div>
-        </section>
-        <!-- .......... End Video Section .......... -->
-        <div style="display:none">
-            <!-- .......... News Section .......... -->
-            <section id="news" class="news uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
-                <div class="container--min uk-container uk-margin-large-bottom">
-                    <h2 class="uk-h2">News</h2>
-                </div>
-                <div class="container--special uk-container uk-container-large">
-                    <div class="slider slider--news uk-position-relative" tabindex="-1" data-uk-slider="finite: true">
-                        <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-grid" data-uk-grid>
-                            <!-- .......... News Item .......... -->
-                            <li>
-                                <div class="uk-card">
-                                    <div class="uk-card-media-top">
-                                        <a
-                                            href="#"
-                                            data-uk-toggle="target: #"
-                                            class="cover__photo uk-background-cover uk-transition-toggle"
-                                            data-src="img/news/01.jpg"
-                                            data-uk-img
-                                        >
-                                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+    </section>
+    <!-- .......... End About Us Section .......... -->
+    <!-- .......... Music Section .......... -->
+    <section id="music" class="music uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container">
+            <h2 class="uk-h2">Music</h2>
+            <div class="uk-child-width-1-1  uk-width-1-1@m" data-uk-grid>
+                <div class="playlist__wrap">
+                    <div class="uk-switcher">
+                        <!-- .......... Album Tracks .......... -->
+                        <div class="playlist bg-dark--1 uk-active">
+                            <div class="albums albums--playlist albums__item">
+                                <iframe style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/artist/3ssz6wQFAbbyt5ivcaFuId?utm_source=generator&theme=0"
+                                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                                <div class="albums__buy uk-visible@s">
+                                    <h6 class="albums__buy_title uk-h6">Available on</h6>
+                                    <div class="albums__buy_buttons">
+                                        <a href="https://music.youtube.com/channel/UCdhLEHmdKfr_9IdVcWtnvIg"
+                                            target="_blank">
+                                            <span class="fab fa-youtube"></span>
+                                        </a>
+                                        <a href="https://open.spotify.com/artist/3ssz6wQFAbbyt5ivcaFuId?si=YykM4GmFTxufmD0P7UL17w&nd=1&dlsi=763caec0a45a4794"
+                                            target="_blank">
+                                            <span class="fab fa-spotify"></span>
+                                        </a>
+                                        <a href="https://music.amazon.com/artists/B0CBJCDHXZ/ragav-venkatesan"
+                                            target="_blank">
+                                            <span class="fab fa-amazon"></span>
                                         </a>
                                     </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="news__title">I should be incapable of drawing a single stroke</h3>
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <div class="events__date uk-width-auto">
-                                                <span class="events__day">20</span>
-                                                <span class="events__month">SEP</span>
-                                                <span class="events__year">2021</span>
-                                            </div>
-                                            <a href="#" data-uk-toggle="target: #" class="news__more btn btn--more">
-                                                Read
-                                            more
-                                                <span class="icon icon--dots"></span>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
-                            </li>
-                            <!-- .......... End News Item .......... -->
-                        </ul>
-                        <!-- .......... News Slider Controls .......... -->
-                        <a
-                            class="slider__control uk-position-center-left"
-                            href="#"
-                            data-uk-slidenav-previous
-                            data-uk-slider-item="previous"
-                        ></a>
-                        <a
-                            class="slider__control uk-position-center-right"
-                            href="#"
-                            data-uk-slidenav-next
-                            data-uk-slider-item="next"
-                        ></a>
-                        <!-- .......... End News Slider Controls .......... -->
+                            </div>
+                        </div>
+                        <!-- .......... End Album Tracks .......... -->
                     </div>
                 </div>
-            </section>
-            <!-- .......... End News Section .......... -->
+            </div>
         </div>
-        <!-- .......... Contacts Section .......... -->
-        <section id="contacts" class="contacts uk-section" data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+    </section>
+    <!-- .......... End Music Section .......... -->
+    <!-- .......... Meet Team Section .......... -->
+    <section id="members" class="team uk-section uk-overflow-hidden"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container uk-position-relative">
+            <h3 class="team__title uk-h3">
+                <span class="team__title_inner">Members</span>
+            </h3>
+            <div class="team__members uk-flex uk-flex-center" data-uk-grid
+                data-uk-scrollspy="cls:uk-animation-fade; target: .team__member__wrap; delay: 300">
+                <div class="team__member__wrap uk-width-1-2 uk-width-1-3@m">
+                    <a class="team__member" data-uk-toggle="target: #ragav">
+                        <div class="cover__photo uk-background-cover uk-transition-toggle"
+                            data-src="img/team/covers/ragav.jpg" data-uk-img>
+                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                        </div>
+                        <span class="team__name">Ragav Venkatesan</span>
+                        <span class="team__vocation">Lead Vocal, Rhythm Guitar</span>
+                    </a>
+                </div>
+                <div class="team__member__wrap uk-width-1-2 uk-width-1-3@m">
+                    <a class="team__member" data-uk-toggle="target: #eshaan">
+                        <div class="cover__photo uk-background-cover uk-transition-toggle"
+                            data-src="img/team/covers/eshaan.jpg" data-uk-img>
+                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                        </div>
+                        <span class="team__name">Eshaan Thakar</span>
+                        <span class="team__vocation">Drums</span>
+                    </a>
+                </div>
+                <div class="team__member__wrap uk-width-1-2 uk-width-1-3@m">
+                    <a class="team__member" data-uk-toggle="target: #aravind">
+                        <div class="cover__photo uk-background-cover uk-transition-toggle"
+                            data-src="img/team/covers/aravind.jpg" data-uk-img>
+                            <span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                        </div>
+                        <span class="team__name">Aravind Nidadavolu</span>
+                        <span class="team__vocation">Bass</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Meet Team Section .......... -->
+    <!-- .......... Tour Section .......... -->
+    <section id="shows" class="events uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container">
+            <h2 class="uk-h2 uk-margin-bottom">Upcoming Shows</h2>
+            <div class="events__table list--striped bg-dark--1">
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">14</span>
+                        <span class="events__month">MAR</span>
+                        <span class="events__year">2025</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Central Saloon</span>
+                        <span class="events__club">Seattle, WA</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-central-3-14-25" class="btn">Info & Tickets</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">17</span>
+                        <span class="events__month">APR</span>
+                        <span class="events__year">2025</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Skylark Cafe</span>
+                        <span class="events__club">Seattle, WA</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-skylark-4-17-25" class="btn">Info & Tickets</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">1</span>
+                        <span class="events__month">MAY</span>
+                        <span class="events__year">2025</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Chop Suey</span>
+                        <span class="events__club">Seattle, WA</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-chopsuey-5-1-25" class="btn">Info & Tickets</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Tour Section .......... -->
+    <!-- .......... Tour Section .......... -->
+    <section id="past_tour" class="events uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container">
+            <h2 class="uk-h2 uk-margin-bottom">Past Shows</h2>
+            <div class="events__table list--striped bg-dark--1">
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">23</span>
+                        <span class="events__month">FEB</span>
+                        <span class="events__year">2025</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Sunset Tavern</span>
+                        <span class="events__club">Seattle, WA</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-sunset-2-23-25" class="btn">Highlights</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">1</span>
+                        <span class="events__month">FEB</span>
+                        <span class="events__year">2025</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">No Fun Bar</span>
+                        <span class="events__club">Portland, OR</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-nofun-2-1-25" class="btn">Highlights</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">12</span>
+                        <span class="events__month">SEP</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">Blue Moon Tavern</span>
+                        <span class="events__club">Seattle, WA</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-bluemoon-9-12-24" class="btn">Highlights</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+                <!-- .......... Tour Item .......... -->
+                <div class="list__item">
+                    <div class="events__date uk-width-auto">
+                        <span class="events__day">30</span>
+                        <span class="events__month">July</span>
+                        <span class="events__year">2024</span>
+                    </div>
+                    <div class="events__location uk-width-expand">
+                        <span class="events__place">High Dive</span>
+                        <span class="events__club">Seattle, WA</span>
+                    </div>
+                    <div class="events__booking uk-width-1-1 uk-width-1-3@s">
+                        <a href="#" data-uk-toggle="target: #article-highdive-7-30-24" class="btn">Highlights</a>
+                    </div>
+                </div>
+                <!-- .......... End Tour Item .......... -->
+            </div>
+        </div>
+    </section>
+    <!-- .......... End Tour Section .......... -->
+    <!-- ........... Bands in town .............-->
+    <div style="display:none">
+        <section id="past_tour" class="events uk-section"
+            data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
             <div class="container--min uk-container">
-                <h2 class="uk-h2">Contacts</h2>
-                <div data-uk-grid>
-                    <div class="uk-width-1-3@m">
-                        <!-- <h3 class="uk-h3">Organization of concerts</h3> -->
-                        <div data-uk-grid>
-                            <!-- .......... Contacts Details .......... -->
-                            <!--
+                <h2 class="uk-h2 uk-margin-bottom">Bands in town</h2>
+                <div class="events__table list--striped bg-dark--1">
+                    <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+                    <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+                    <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+                    <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+                    <a class="bit-widget-initializer" data-artist-name="id_15556032" data-events-to-display=""
+                        data-background-color="rgba(47,44,91,1)" data-separator-color="rgba(146,148,199,1)"
+                        data-text-color="rgba(255,255,255,1)" data-font="Verdana" data-auto-style="true"
+                        data-button-label-capitalization="uppercase" data-header-capitalization="uppercase"
+                        data-location-capitalization="uppercase" data-venue-capitalization="uppercase"
+                        data-display-local-dates="true" data-local-dates-position="tab" data-display-past-dates="true"
+                        data-display-details="true" data-display-lineup="true" data-display-start-time="false"
+                        data-social-share-icon="true" data-display-limit="all" data-date-format="MMM. D, YYYY"
+                        data-date-orientation="horizontal" data-date-border-color="#4A4A4A" data-date-border-width="1px"
+                        data-date-capitalization="capitalize" data-date-border-radius="10px"
+                        data-event-ticket-cta-size="small" data-event-custom-ticket-text=""
+                        data-event-ticket-text="TICKETS" data-event-ticket-icon="false"
+                        data-event-ticket-cta-text-color="rgba(255,255,255,1)"
+                        data-event-ticket-cta-bg-color="rgba(109,2,229,1)"
+                        data-event-ticket-cta-border-color="rgba(109,2,229,1)" data-event-ticket-cta-border-width="0px"
+                        data-event-ticket-cta-border-radius="2px" data-sold-out-button-text-color="rgba(255,255,255,1)"
+                        data-sold-out-button-background-color="rgba(74,74,74,1)"
+                        data-sold-out-button-border-color="rgba(74,74,74,1)" data-sold-out-button-clickable="true"
+                        data-event-rsvp-position="left" data-event-rsvp-cta-size="medium"
+                        data-event-rsvp-only-show-icon="false" data-event-rsvp-text="RSVP" data-event-rsvp-icon="false"
+                        data-event-rsvp-cta-text-color="rgba(255,255,255,1)"
+                        data-event-rsvp-cta-bg-color="rgba(109,2,229,1)"
+                        data-event-rsvp-cta-border-color="rgba(109,2,229,1)" data-event-rsvp-cta-border-width="1px"
+                        data-event-rsvp-cta-border-radius="2px" data-follow-section-position="top"
+                        data-follow-section-alignment="center" data-follow-section-header-text="RSVP & TICKETS"
+                        data-follow-section-cta-size="medium" data-follow-section-cta-text="FOLLOW"
+                        data-follow-section-cta-icon="true" data-follow-section-cta-text-color="rgba(255,255,255,1)"
+                        data-follow-section-cta-bg-color="rgba(109,2,229,1)"
+                        data-follow-section-cta-border-color="rgba(109,2,229,1)"
+                        data-follow-section-cta-border-width="0px" data-follow-section-cta-border-radius="2px"
+                        data-play-my-city-position="hidden" data-play-my-city-alignment="center"
+                        data-play-my-city-header-text="Don’t see a show near you?" data-play-my-city-cta-size="medium"
+                        data-play-my-city-cta-text="REQUEST A SHOW" data-play-my-city-cta-icon="false"
+                        data-play-my-city-cta-text-color="rgba(255,255,255,1)"
+                        data-play-my-city-cta-bg-color="rgba(74,74,74,1)"
+                        data-play-my-city-cta-border-color="rgba(74,74,74,1)" data-play-my-city-cta-border-width="0px"
+                        data-play-my-city-cta-border-radius="2px" data-optin-font="" data-optin-text-color=""
+                        data-optin-bg-color="" data-optin-cta-text-color="" data-optin-cta-bg-color=""
+                        data-optin-cta-border-width="" data-optin-cta-border-radius="" data-optin-cta-border-color=""
+                        data-language="en" data-layout-breakpoint="500" data-app-id="" data-affil-code=""
+                        data-bit-logo-position="hidden" data-bit-logo-color="rgba(255,255,255,1)"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- .......... Video Section .......... -->
+    <section id="video" class="video uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container uk-margin-large-bottom">
+            <h2 class="uk-h2">Videos</h2>
+        </div>
+        <div class="js-video-slider container--special uk-container uk-container-large uk-position-relative"
+            tabindex="-1" data-uk-slider="finite: false">
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l">
+                <!-- .......... Video Item .......... -->
+                <li class="video__column uk-width-2-3@s uk-width-1-2@m">
+                    <div class="embed-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/-s-avDEeM5A?si=Wp_X19DrV10M86Wh" title="Yet, I Rise"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <!-- .......... End Video Item .......... -->
+                <!-- .......... Video Item .......... -->
+                <li class="video__column uk-width-2-3@s uk-width-1-2@m">
+                    <div class="embed-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/1Ew0jQjpfZs?si=RuNn1hwYpx5GUdp4"
+                            title="Dual States of Existence" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <!-- .......... End Video Item .......... -->
+                <!-- .......... End Video Items .......... -->
+            </ul>
+            <!-- .......... Video Slider Controls .......... -->
+            <a class="slider__control uk-position-center-left" href="#" data-uk-slidenav-previous
+                data-uk-slider-item="previous"></a>
+            <a class="slider__control uk-position-center-right" href="#" data-uk-slidenav-next
+                data-uk-slider-item="next"></a>
+            <!-- .......... End Video Slider Controls .......... -->
+        </div>
+    </section>
+    <!-- .......... End Video Section .......... -->
+    <div style="display:none">
+        <!-- .......... News Section .......... -->
+        <section id="news" class="news uk-section"
+            data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+            <div class="container--min uk-container uk-margin-large-bottom">
+                <h2 class="uk-h2">News</h2>
+            </div>
+            <div class="container--special uk-container uk-container-large">
+                <div class="slider slider--news uk-position-relative" tabindex="-1" data-uk-slider="finite: true">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-grid"
+                        data-uk-grid>
+                        <!-- .......... News Item .......... -->
+                        <li>
+                            <div class="uk-card">
+                                <div class="uk-card-media-top">
+                                    <a href="#" data-uk-toggle="target: #"
+                                        class="cover__photo uk-background-cover uk-transition-toggle"
+                                        data-src="img/news/01.jpg" data-uk-img>
+                                        <span
+                                            class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span>
+                                    </a>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="news__title">I should be incapable of drawing a single stroke</h3>
+                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                        <div class="events__date uk-width-auto">
+                                            <span class="events__day">20</span>
+                                            <span class="events__month">SEP</span>
+                                            <span class="events__year">2021</span>
+                                        </div>
+                                        <a href="#" data-uk-toggle="target: #" class="news__more btn btn--more">
+                                            Read
+                                            more
+                                            <span class="icon icon--dots"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- .......... End News Item .......... -->
+                    </ul>
+                    <!-- .......... News Slider Controls .......... -->
+                    <a class="slider__control uk-position-center-left" href="#" data-uk-slidenav-previous
+                        data-uk-slider-item="previous"></a>
+                    <a class="slider__control uk-position-center-right" href="#" data-uk-slidenav-next
+                        data-uk-slider-item="next"></a>
+                    <!-- .......... End News Slider Controls .......... -->
+                </div>
+            </div>
+        </section>
+        <!-- .......... End News Section .......... -->
+    </div>
+    <!-- .......... Contacts Section .......... -->
+    <section id="contacts" class="contacts uk-section"
+        data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300">
+        <div class="container--min uk-container">
+            <h2 class="uk-h2">Contacts</h2>
+            <div data-uk-grid>
+                <div class="uk-width-1-3@m">
+                    <!-- <h3 class="uk-h3">Organization of concerts</h3> -->
+                    <div data-uk-grid>
+                        <!-- .......... Contacts Details .......... -->
+                        <!--
                         <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m">
                             <strong class="contacts__subtitle">Call us:</strong>
                             <br>
@@ -880,21 +795,21 @@
                             <a href="tel:+888888888888">(8888) 888-888-88</a>
                         </p>
                         -->
-                            <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m">
-                                <strong class="contacts__subtitle">E-mail:</strong>
-                                <br>
-                                <a href="mailto:ragav.venkatesan@gmail.com">ragav.venkatesan@gmail.com</a>
-                            </p>
-                            <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m">
-                                <strong class="contacts__subtitle">Instagram:</strong>
-                                <br>
-                                <a href="https://www.instagram.com/chirality.band">@chirality.band</a>
-                            </p>
-                            <!-- .......... End Contacts Details .......... -->
-                        </div>
+                        <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m">
+                            <strong class="contacts__subtitle">E-mail:</strong>
+                            <br>
+                            <a href="mailto:ragav.venkatesan@gmail.com">ragav.venkatesan@gmail.com</a>
+                        </p>
+                        <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m">
+                            <strong class="contacts__subtitle">Instagram:</strong>
+                            <br>
+                            <a href="https://www.instagram.com/chirality.band">@chirality.band</a>
+                        </p>
+                        <!-- .......... End Contacts Details .......... -->
                     </div>
-                    <!-- .......... Feedback Form .......... -->
-                    <!--
+                </div>
+                <!-- .......... Feedback Form .......... -->
+                <!--
                 <div class="uk-width-2-3@m">
                     <div class="uk-card bg-dark--1">
                         <div class="contacts__form uk-card-body">
@@ -918,191 +833,184 @@
                     </div>
                 </div>
                 -->
-                    <!-- .......... End Feedback Form .......... -->
-                </div>
+                <!-- .......... End Feedback Form .......... -->
             </div>
-        </section>
-        <!-- .......... End Contacts Section .......... -->
-        <!-- .......... Footer .......... -->
-        <footer class="footer bg-dark--1 uk-section uk-section-small">
-            <div class="container--min uk-container">
-                <div class="uk-flex uk-flex-between uk-child-width-auto" data-uk-grid>
-                    <ul class="nav nav--footer js-scrollspy-nav uk-flex uk-flex-wrap">
-                        <li>
-                            <a href="#members">Members</a>
-                        </li>
-                        <li>
-                            <a href="#music">Music</a>
-                        </li>
-                        <li>
-                            <a href="#video">Video</a>
-                        </li>
-                        <li>
-                            <a href="#shows">Shows</a>
-                        </li>
-                        <!-- <li><a href="#news">News</a></li> -->
-                        <li>
-                            <a href="#contacts">Contacts</a>
-                        </li>
-                    </ul>
-                    <!--
+        </div>
+    </section>
+    <!-- .......... End Contacts Section .......... -->
+    <!-- .......... Footer .......... -->
+    <footer class="footer bg-dark--1 uk-section uk-section-small">
+        <div class="container--min uk-container">
+            <div class="uk-flex uk-flex-between uk-child-width-auto" data-uk-grid>
+                <ul class="nav nav--footer js-scrollspy-nav uk-flex uk-flex-wrap">
+                    <li>
+                        <a href="#members">Members</a>
+                    </li>
+                    <li>
+                        <a href="#music">Music</a>
+                    </li>
+                    <li>
+                        <a href="#video">Video</a>
+                    </li>
+                    <li>
+                        <a href="#shows">Shows</a>
+                    </li>
+                    <!-- <li><a href="#news">News</a></li> -->
+                    <li>
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+                <!--
                 <ul class="nav nav--footer uk-flex uk-flex-wrap">
                     <li><a href="#" data-uk-toggle="target: #modal-text">Terms of use</a></li>
                     <li><a href="#" data-uk-toggle="target: #modal-text">Privacy Policy</a></li>
                 </ul>
                 -->
-                </div>
-                <div class="social social--footer">
+            </div>
+            <div class="social social--footer">
+                <ul class="social__list uk-list uk-align-center">
+                    <li>
+                        <a href="https://www.youtube.com/@chirality.band.official" target="_black">
+                            <span class="fab fa-youtube"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/chirality.band" target="_black">
+                            <span class="fab fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqazBvVEZvNVk2TVV4OEhxZGh3UzFWTXJLOGNmd3xBQ3Jtc0tscVZzVks0dUtsbEgwcjlGdWlqUVZhUVZsY1JhOVpoaXhRa3BNQU9HdkNHYTFqWkhBazNMSXg5Q1M1Sk1lQmp2dWlhTUFIVW1Pd3hMWl9Dd3F3QkJTMHNkdE8wT05oaDRiWXNDUHhUOHVmOGdwTEttVQ&q=https%3A%2F%2Fopen.spotify.com%2Fartist%2F3ssz6wQFAbbyt5ivcaFuId"
+                            target="_black">
+                            <span class="fab fa-spotify"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyrights">
+                &copy;2024-2025 Chirality, Ragav Venkatesan. All rights reserved.
+            </p>
+        </div>
+        <a href="#" class="footer__totop" data-uk-totop data-uk-scroll></a>
+    </footer>
+    <!-- .......... End Footer .......... -->
+    <!-- .......... Modal Windows .......... -->
+    <div id="ragav" data-uk-modal>
+        <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
+            <!--<div class="modal__cover uk-cover-container">
+                <img src="img/team/covers/ragav.jpg" data-src="img/team/covers/ragav.jpg" alt="" data-uk-cover>
+            </div>-->
+            <div class="modal__content">
+                <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/horacio.jpg"
+                    data-uk-img></div>-->
+                <br>
+                <br>
+                <h3 class="modal__profile__title uk-modal-title uk-text-center">Ragav Venkatesan</h3>
+                <div class="modal__profile__subtitle uk-text-center">Lead Vocal and Guitars</div>
+                <p class="uk-text-left"></p>
+                <div class="social social--modal">
                     <ul class="social__list uk-list uk-align-center">
                         <li>
-                            <a href="https://www.youtube.com/@chirality.band.official" target="_black">
+                            <a href="https://www.youtube.com/@ragav.venkatesan" target="_black">
                                 <span class="fab fa-youtube"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/chirality.band" target="_black">
+                            <a href="https://www.instagram.com/ragav.music" target="_black">
                                 <span class="fab fa-instagram"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqazBvVEZvNVk2TVV4OEhxZGh3UzFWTXJLOGNmd3xBQ3Jtc0tscVZzVks0dUtsbEgwcjlGdWlqUVZhUVZsY1JhOVpoaXhRa3BNQU9HdkNHYTFqWkhBazNMSXg5Q1M1Sk1lQmp2dWlhTUFIVW1Pd3hMWl9Dd3F3QkJTMHNkdE8wT05oaDRiWXNDUHhUOHVmOGdwTEttVQ&q=https%3A%2F%2Fopen.spotify.com%2Fartist%2F3ssz6wQFAbbyt5ivcaFuId" target="_black">
+                            <a href="https://open.spotify.com/artist/3ssz6wQFAbbyt5ivcaFuId?si=MYCjNIY1SCmUs_TFe1268A"
+                                target="_black">
                                 <span class="fab fa-spotify"></span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <p class="footer__copyrights">
-                    &copy;2024-2025 Chirality, Ragav Venkatesan. All rights reserved.
-                </p>
             </div>
-            <a
-                href="#"
-                class="footer__totop"
-                data-uk-totop
-                data-uk-scroll
-            ></a>
-        </footer>
-        <!-- .......... End Footer .......... -->
-        <!-- .......... Modal Windows .......... -->
-        <div id="ragav" data-uk-modal>
-            <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
-                <!--<div class="modal__cover uk-cover-container">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+        </div>
+    </div>
+    <!-- End one modal window -->
+    <div id="eshaan" data-uk-modal>
+        <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
+            <!--<div class="modal__cover uk-cover-container">
                 <img src="img/team/covers/ragav.jpg" data-src="img/team/covers/ragav.jpg" alt="" data-uk-cover>
             </div>-->
-                <div class="modal__content">
-                    <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/horacio.jpg"
+            <div class="modal__content">
+                <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/horacio.jpg"
                     data-uk-img></div>-->
-                    <br>
-                    <br>
-                    <h3 class="modal__profile__title uk-modal-title uk-text-center">Ragav Venkatesan</h3>
-                    <div class="modal__profile__subtitle uk-text-center">Lead Vocal and Guitars</div>
-                    <p class="uk-text-left"></p>
-                    <div class="social social--modal">
-                        <ul class="social__list uk-list uk-align-center">
-                            <li>
-                                <a href="https://www.youtube.com/@ragav.venkatesan" target="_black">
-                                    <span class="fab fa-youtube"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/ragav.music" target="_black">
-                                    <span class="fab fa-instagram"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://open.spotify.com/artist/3ssz6wQFAbbyt5ivcaFuId?si=MYCjNIY1SCmUs_TFe1268A" target="_black">
-                                    <span class="fab fa-spotify"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <br>
+                <br>
+                <h3 class="modal__profile__title uk-modal-title uk-text-center">Eshaan Thakar</h3>
+                <div class="modal__profile__subtitle uk-text-center">Drums</div>
+                <p class="uk-text-left"></p>
+                <div class="social social--modal">
+                    <ul class="social__list uk-list uk-align-center">
+                        <li>
+                            <a href="https://www.instagram.com/eshaan.thakar.music" target="_black">
+                                <span class="fab fa-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
             </div>
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
         </div>
-        <!-- End one modal window -->
-        <div id="eshaan" data-uk-modal>
-            <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
-                <!--<div class="modal__cover uk-cover-container">
+    </div>
+    <!-- End one modal window -->
+    <div id="aravind" data-uk-modal>
+        <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
+            <!--<div class="modal__cover uk-cover-container">
                 <img src="img/team/covers/ragav.jpg" data-src="img/team/covers/ragav.jpg" alt="" data-uk-cover>
             </div>-->
-                <div class="modal__content">
-                    <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/horacio.jpg"
+            <div class="modal__content">
+                <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/horacio.jpg"
                     data-uk-img></div>-->
-                    <br>
-                    <br>
-                    <h3 class="modal__profile__title uk-modal-title uk-text-center">Eshaan Thakar</h3>
-                    <div class="modal__profile__subtitle uk-text-center">Drums</div>
-                    <p class="uk-text-left"></p>
-                    <div class="social social--modal">
-                        <ul class="social__list uk-list uk-align-center">
-                            <li>
-                                <a href="https://www.instagram.com/eshaan.thakar.music" target="_black">
-                                    <span class="fab fa-instagram"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <br>
+                <br>
+                <h3 class="modal__profile__title uk-modal-title uk-text-center">Aravind Nidadavolu</h3>
+                <div class="modal__profile__subtitle uk-text-center">Bass</div>
+                <p class="uk-text-left"></p>
+                <div class="social social--modal">
+                    <ul class="social__list uk-list uk-align-center">
+                        <li>
+                            <a href="https://www.instagram.com/aravind_ni/" target="_black">
+                                <span class="fab fa-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
             </div>
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
         </div>
-        <!-- End one modal window -->
-        <div id="aravind" data-uk-modal>
-            <div class="modal modal__profile uk-modal-dialog uk-margin-auto-vertical">
-                <!--<div class="modal__cover uk-cover-container">
-                <img src="img/team/covers/ragav.jpg" data-src="img/team/covers/ragav.jpg" alt="" data-uk-cover>
-            </div>-->
-                <div class="modal__content">
-                    <!--<div class="modal__avatar boxshadow uk-background-cover" data-src="img/team/avatars/horacio.jpg"
-                    data-uk-img></div>-->
-                    <br>
-                    <br>
-                    <h3 class="modal__profile__title uk-modal-title uk-text-center">Aravind Nidadavolu</h3>
-                    <div class="modal__profile__subtitle uk-text-center">Bass</div>
-                    <p class="uk-text-left"></p>
-                    <div class="social social--modal">
-                        <ul class="social__list uk-list uk-align-center">
-                            <li>
-                                <a href="https://www.instagram.com/aravind_ni/" target="_black">
-                                    <span class="fab fa-instagram"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-            </div>
-        </div>
-        <!-- End one modal window -->
-        <div id="article-keg-of-glory-release" class="js-modal-article" data-uk-modal>
-            <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-                <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-                <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-                    <div class="cover__photo--1-2 uk-background-cover uk-visible@m" data-src="img/albums/songs/keg.png" data-uk-img></div>
-                    <div class="modal__article_text">
-                        <div class="modal__overflow">
-                            <h2 class="uk-h3">Keg of Glory</h2>
-                            <p>
-                                Keg of Glory is a song valorizing Joshua Lyman from the legendary American TV show,
+    </div>
+    <!-- End one modal window -->
+    <div id="article-keg-of-glory-release" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-2 uk-background-cover uk-visible@m" data-src="img/albums/songs/keg.png"
+                    data-uk-img></div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Keg of Glory</h2>
+                        <p>
+                            Keg of Glory is a song valorizing Joshua Lyman from the legendary American TV show,
                             "The West Wing". It is also about the characteristics of Joshua Lyman such as loyalty,
                             sincerity
                             and leadership. It is in honor of that person in our lives who has always been there pushing
                             up
                             onward and upward.
-                            </p>
-                            <div class="embed-container">
-                                <iframe
-                                    style="border-radius:12px"
-                                    src="https://open.spotify.com/embed/track/6SpiDvhCztvrigUVUs1Ybc?utm_source=generator"
-                                    width="100%"
-                                    height="152"
-                                    frameBorder="0"
-                                    allowfullscreen=""
-                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                    loading="lazy"
-                                ></iframe>
-                            </div>
+                        </p>
+                        <div class="embed-container">
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/track/6SpiDvhCztvrigUVUs1Ybc?utm_source=generator"
+                                width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -1114,7 +1022,8 @@
         <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
             <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
             <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-                <div class="cover__photo--1-2 uk-background-cover uk-visible@m" data-src="img/albums/songs/shambo.png" data-uk-img></div>
+                <div class="cover__photo--1-2 uk-background-cover uk-visible@m" data-src="img/albums/songs/shambo.png"
+                    data-uk-img></div>
                 <div class="modal__article_text">
                     <div class="modal__overflow">
                         <h2 class="uk-h3">Shambo</h2>
@@ -1134,247 +1043,214 @@
                             This is also the only song in the EP that was not sung by me.
                         </p>
                         <div class="embed-container">
-                            <iframe
-                                style="border-radius:12px"
+                            <iframe style="border-radius:12px"
                                 src="https://open.spotify.com/embed/track/2iEjpQf3bigrhEmjRA6NyD?utm_source=generator"
-                                width="100%"
-                                height="152"
-                                frameBorder="0"
-                                allowfullscreen=""
+                                width="100%" height="152" frameBorder="0" allowfullscreen=""
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy"
-                            ></iframe>
+                                loading="lazy"></iframe>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="article-bluemoon-9-12-24" class="js-modal-article" data-uk-modal>
-    <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-        <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-        <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-            <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                <div style="text-align: center;">
-                    <img src="img/posters/bluemoon-9-12.jpg" width="100%">
-                </div>
-            </div>
-            <div class="modal__article_text">
-                <div class="modal__overflow">
-                    <h2 class="uk-h3">Bluemoon - 9/12/24</h2>
-                    <div class="embed-container">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/Bm_WIcv1VKw?si=-zQlrvoznOD3LQe7"
-                            title="Keg of Glory"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div id="article-highdive-7-30-24" class="js-modal-article" data-uk-modal>
-    <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-        <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-        <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-            <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                <div style="text-align: center;">
-                    <img src="img/posters/highdive-7-30.jpg" width="100%">
-                </div>
-            </div>
-            <div class="modal__article_text">
-                <div class="modal__overflow">
-                    <h2 class="uk-h3">High Dive - 7/30/24</h2>
-                    <div class="embed-container">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/gDkl24tsM8E?si=Ji8bUxnOcWXsWlOL"
-                            title="Homefree"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div id="article-nofun-2-1-25" class="js-modal-article" data-uk-modal>
-    <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-        <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-        <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-            <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                <div style="text-align: center;">
-                    <img src="img/posters/nofun-2-1.jpg" width="100%">
+    <div id="article-bluemoon-9-12-24" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                    <div style="text-align: center;">
+                        <img src="img/posters/bluemoon-9-12.jpg" width="100%">
+                    </div>
+                </div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Bluemoon - 9/12/24</h2>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Bm_WIcv1VKw?si=-zQlrvoznOD3LQe7" title="Keg of Glory"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="modal__article_text">
-                <div class="modal__overflow">
-                    <h2 class="uk-h3">No Fun Bar - 2/1/25</h2>
-                    <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                        <div style="text-align: center;">
-                            <img src="img/photos/no-fun-2-1-25/no-fun-photo.jpg" alt="No fun show" width="215em">
+        </div>
+    </div>
+    <div id="article-highdive-7-30-24" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                    <div style="text-align: center;">
+                        <img src="img/posters/highdive-7-30.jpg" width="100%">
+                    </div>
+                </div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">High Dive - 7/30/24</h2>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/gDkl24tsM8E?si=Ji8bUxnOcWXsWlOL" title="Homefree"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div id="article-sunset-2-23-25" class="js-modal-article" data-uk-modal>
-    <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-        <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-        <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-            <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                <div style="text-align: center;">
-                    <img src="img/posters/sunset-2-23.jpg" width="100%">
+    <div id="article-nofun-2-1-25" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                    <div style="text-align: center;">
+                        <img src="img/posters/nofun-2-1.jpg" width="100%">
+                    </div>
                 </div>
-            </div>
-            <div class="modal__article_text">
-                <div class="modal__overflow">
-                    <h2 class="uk-h3">Sunset Tavern- 2/23/25</h2>
-                    <div class="embed-container">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/-s-avDEeM5A?si=uTPkQvIWrciu7gV4"
-                            title="Yet, I Rise"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                    <br>
-                    <div class="embed-container">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/1Ew0jQjpfZs?si=pwQ7os2I0Y--jocr"
-                            title="Dual States of Existence"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                    <br>
-                    <div class="embed-container">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/5YAEldJrk_A?si=0YWSlVOo83RpnSmx"
-                            title="Homefree"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                    <br>
-                    <div class="embed-container">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/Yt2Tf5qp8MQ?si=4LZpsNHmAZRyjvoG"
-                            title="Let Go"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">No Fun Bar - 2/1/25</h2>
+                        <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                            <div style="text-align: center;">
+                                <img src="img/photos/no-fun-2-1-25/no-fun-photo.jpg" alt="No fun show" width="215em">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div id="article-central-3-14-25" class="js-modal-article" data-uk-modal>
-    <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-        <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-        <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-            <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                <div style="text-align: center;">
-                    <img src="img/posters/central-3-14.jpg" width="100%">
+    <div id="article-sunset-2-23-25" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                    <div style="text-align: center;">
+                        <img src="img/posters/sunset-2-23.jpg" width="100%">
+                    </div>
                 </div>
-            </div>
-            <div class="modal__article_text">
-                <div class="modal__overflow">
-                    <h2 class="uk-h3">Central Saloon - 3/14/25</h2>
-                    <p>
-                        Tickets and more details on the show can be found
-                        <u>
-                            <a href="https://partiful.com/e/i7aYfkKnuf16ccylR0hH">here</a>
-                        </u>
-                        Bands on Bill: Gniffke, Atrocity girl.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="article-skylark-4-17-25" class="js-modal-article" data-uk-modal>
-    <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-        <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-        <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-            <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                <div style="text-align: center;">
-                    <img src="img/posters/skylark-4-17.jpg" width="100%">
-                </div>
-            </div>
-            <div class="modal__article_text">
-                <div class="modal__overflow">
-                    <h2 class="uk-h3">Skylark Cafe - 4/17/25</h2>
-                    <p>
-                        Tickets and more details on the show to come.
-                    </p>
-                    <p>
-                        Bands on Bill: Carson, Concrete Island.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="article-central-3-14-25" class="js-modal-article" data-uk-modal>
-    <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
-        <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
-        <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
-            <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
-                <div style="text-align: center;">
-                    <!--<img src="img/posters/chop-suey-5-1.jpg" width="100%">--></div>
-            </div>
-            <div class="modal__article_text">
-                <div class="modal__overflow">
-                    <h2 class="uk-h3">Chop Suey - 5/1/25</h2>
-                    <p>
-                        Tickets and more details on the show to come.
-                    </p>
-                    <p>
-                        Bands on Bill: RC Cars on Mars, Mantra.
-                    </p>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Sunset Tavern- 2/23/25</h2>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/-s-avDEeM5A?si=uTPkQvIWrciu7gV4" title="Yet, I Rise"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/1Ew0jQjpfZs?si=pwQ7os2I0Y--jocr"
+                                title="Dual States of Existence" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/5YAEldJrk_A?si=0YWSlVOo83RpnSmx" title="Homefree"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <div class="embed-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Yt2Tf5qp8MQ?si=4LZpsNHmAZRyjvoG" title="Let Go"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- .......... End Modal Windows .......... -->
-<!-- .......... Scripts .......... -->
-<script src="js/jquery.min.js"></script>
-<script src="js/uikit.min.js"></script>
-<script src="js/mediaelement-and-player.min.js"></script>
-<script src="js/scripts.js"></script>
-<!-- .......... End Scripts .......... -->
+    <div id="article-central-3-14-25" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                    <div style="text-align: center;">
+                        <img src="img/posters/central-3-14.jpg" width="100%">
+                    </div>
+                </div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Central Saloon - 3/14/25</h2>
+                        <p>
+                            Tickets and more details on the show can be found
+                            <u>
+                                <a href="https://partiful.com/e/i7aYfkKnuf16ccylR0hH">here</a>
+                            </u>
+                            Bands on Bill: Gniffke, Atrocity girl.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="article-skylark-4-17-25" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                    <div style="text-align: center;">
+                        <img src="img/posters/skylark-4-17.jpg" width="100%">
+                    </div>
+                </div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Skylark Cafe - 4/17/25</h2>
+                        <p>
+                            Tickets and more details on the show to come.
+                        </p>
+                        <p>
+                            Bands on Bill: Carson, Concrete Island.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="article-central-3-14-25" class="js-modal-article" data-uk-modal>
+        <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+            <button class="modal__close uk-modal-close-outside" type="button" data-uk-close></button>
+            <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
+                <div class="cover__photo--1-3 uk-background-cover uk-visible@m" data-uk-img>
+                    <div style="text-align: center;">
+                        <!--<img src="img/posters/chop-suey-5-1.jpg" width="100%">-->
+                    </div>
+                </div>
+                <div class="modal__article_text">
+                    <div class="modal__overflow">
+                        <h2 class="uk-h3">Chop Suey - 5/1/25</h2>
+                        <p>
+                            Tickets and more details on the show to come.
+                        </p>
+                        <p>
+                            Bands on Bill: RC Cars on Mars, Mantra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .......... End Modal Windows .......... -->
+    <!-- .......... Scripts .......... -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- .......... End Scripts .......... -->
 </body>
+
 </html>
